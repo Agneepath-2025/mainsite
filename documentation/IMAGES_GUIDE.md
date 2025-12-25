@@ -77,7 +77,7 @@ Files should be named in lowercase with hyphens, matching the names in `lib/team
 - `manya-kapoor.jpg`
 - `anshika.jpg`
 
-#### Tech (2)
+#### Tech (4)
 - `nitin-s.jpg`
 - `parshwa-doshi.jpg`
 - `hriday-koppikar.jpg`
