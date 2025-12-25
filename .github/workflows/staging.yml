@@ -38,13 +38,13 @@ jobs:
           username: ${{ secrets.STAGING_SERVER_USER }}
           key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
           script: |
-            cd ag-site-staging
+            cd mainsite-staging
             git fetch origin
             git reset --hard origin/develop
             git pull origin develop
             npm ci
             npm run build
-            pm2 restart ag-site-staging || pm2 start npm --name ag-site-staging -- start
+            pm2 restart mainsite-staging || pm2 start npm --name mainsite-staging -- start
             pm2 save
             echo "✅ Staging deployment completed successfully!"
 

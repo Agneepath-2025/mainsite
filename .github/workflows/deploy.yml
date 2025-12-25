@@ -41,13 +41,13 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ag-site
+            cd mainsite
             git fetch origin
             git reset --hard origin/main
             git pull origin main
             npm ci --production
             npm run build
-            pm2 restart ag-site || pm2 start npm --name ag-site -- start
+            pm2 restart mainsite || pm2 start npm --name mainsite -- start
             pm2 save
             echo "✅ Deployment completed successfully!"
 

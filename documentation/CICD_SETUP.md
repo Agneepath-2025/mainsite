@@ -80,8 +80,8 @@ cat ~/.ssh/id_rsa
 npm install -g pm2
 
 # Clone repository
-git clone <repository-url> ag-site
-cd ag-site
+git clone <repository-url> mainsite
+cd mainsite
 
 # Install dependencies
 npm install
@@ -90,7 +90,7 @@ npm install
 npm run build
 
 # Start with PM2
-pm2 start npm --name ag-site -- start
+pm2 start npm --name mainsite -- start
 pm2 save
 pm2 startup
 ```
@@ -167,10 +167,10 @@ ssh user@server-ip
 pm2 status
 
 # View logs
-pm2 logs ag-site
+pm2 logs mainsite
 
 # Restart if needed
-pm2 restart ag-site
+pm2 restart mainsite
 ```
 
 ## Security Best Practices
