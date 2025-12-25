@@ -13,14 +13,21 @@ export default function TeamPage() {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: 0.02,
+        delayChildren: 0,
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 10 },
+    show: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.3,
+      }
+    },
   };
 
   const getTeamByVertical = (verticalName: string) => {
@@ -94,8 +101,8 @@ export default function TeamPage() {
               key={vertical.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, delay: verticalIndex * 0.1 }}
+              viewport={{ once: true, margin: "-100px", amount: 0.1 }}
+              transition={{ duration: 0.3 }}
               className="mb-24 last:mb-0"
             >
               {/* Vertical Header */}
@@ -114,7 +121,7 @@ export default function TeamPage() {
                 variants={container}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.1 }}
                 className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
               >
                 {members.map((member) => (
