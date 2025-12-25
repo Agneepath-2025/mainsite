@@ -115,7 +115,7 @@ Files should be named in lowercase with hyphens, matching the names in `lib/team
 4. **Test locally:**
    ```bash
    npm run dev
-   # Visit http://localhost:3000/team
+   # Visit http://localhost:3000/meet-the-team
    ```
 
 ---
@@ -296,7 +296,7 @@ Before deploying to production:
 - [ ] All sponsor logos added to `/public/sponsors/`
 - [ ] All images optimized (< 500KB each)
 - [ ] All images follow naming convention
-- [ ] Tested locally at `/team` and `/sponsors`
+- [ ] Tested locally at `/meet-the-team` and `/sponsors`
 - [ ] Images display correctly on all devices
 - [ ] No broken image placeholders
 - [ ] Favicon displays in browser tabs
