@@ -76,7 +76,7 @@ export default function TeamPage() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              The passionate individuals behind Ashoka University's premier sports festival.
+              The passionate individuals behind Ashoka University&apos;s premier sports festival.
             </p>
           </motion.div>
         </div>
