@@ -292,7 +292,7 @@ chmod +x setup-images.sh
 
 Before deploying to production:
 
-- [ ] All 34 team member photos added to `/public/team/`
+- [ ] All 36 team member photos added to `/public/team/`
 - [ ] All sponsor logos added to `/public/sponsors/`
 - [ ] All images optimized (< 500KB each)
 - [ ] All images follow naming convention
