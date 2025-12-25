@@ -63,23 +63,23 @@ export const verticals: Vertical[] = [
 ];
 
 export const teamMembers: TeamMember[] = [
-  // Festival Secretaries
+  // Fest Secretaries
   {
     id: "1",
     name: "Bhavya Sood",
-    role: "Festival Secretary",
+    role: "Fest Secretary",
     vertical: "Fest Secretaries",
     image: "/team/bhavya-sood.jpg"
   },
   {
     id: "2",
     name: "Adviti Basu",
-    role: "Festival Secretary",
+    role: "Fest Secretary",
     vertical: "Fest Secretaries",
     image: "/team/adviti-basu.jpg"
   },
   
-  // Deputy Festival Secretaries
+  // Deputy Fest Secretaries
   {
     id: "3",
     name: "Diya Sandhir",
@@ -323,19 +323,5 @@ export const teamMembers: TeamMember[] = [
     role: "Tech",
     vertical: "Tech",
     image: "/team/parshwa-doshi.jpg"
-  },
-  {
-    id: "35",
-    name: "Hriday Koppikar",
-    role: "Tech",
-    vertical: "Tech",
-    image: "/team/hriday-koppikar.jpg"
-  },
-  {
-    id: "36",
-    name: "Shristi Sharma",
-    role: "Tech",
-    vertical: "Tech",
-    image: "/team/shristi-sharma.jpg"
   },
 ];
