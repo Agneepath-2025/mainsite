@@ -80,6 +80,8 @@ Files should be named in lowercase with hyphens, matching the names in `lib/team
 #### Tech (2)
 - `nitin-s.jpg`
 - `parshwa-doshi.jpg`
+- `hriday-koppikar.jpg`
+- `shristi-sharma.jpg`
 
 ### Image Specifications
 
