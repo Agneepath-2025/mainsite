@@ -13,153 +13,315 @@ export interface Vertical {
 
 export const verticals: Vertical[] = [
   {
-    name: "Core Team",
-    description: "Leading Agneepath 7.0 to new heights"
+    name: "Fest Secretaries",
+    description: "Leading Agneepath 7.0"
   },
   {
-    name: "Sports",
-    description: "Organizing tournaments and managing competitions"
+    name: "Deputy Fest Secretaries",
+    description: "Supporting the core leadership"
   },
   {
-    name: "Marketing & Outreach",
-    description: "Spreading the word and building partnerships"
+    name: "Sponsorships & Headliners",
+    description: "Building partnerships and securing headliners"
   },
   {
-    name: "Hospitality",
-    description: "Ensuring comfort and care for all participants"
+    name: "Finance",
+    description: "Managing budgets and financial operations"
   },
   {
-    name: "Logistics",
-    description: "Managing operations and event coordination"
+    name: "Social Media, Design & Marketing",
+    description: "Creating content and managing outreach"
   },
   {
-    name: "Design & Media",
-    description: "Creating visual content and capturing memories"
+    name: "Events and Logistics",
+    description: "Coordinating events and operations"
+  },
+  {
+    name: "Safety and Security",
+    description: "Ensuring safety for all participants"
+  },
+  {
+    name: "Outreach & Registration Desk",
+    description: "Managing registrations and communications"
+  },
+  {
+    name: "Travel & Hospitality",
+    description: "Coordinating travel and accommodation"
+  },
+  {
+    name: "Decor and Ceremonies",
+    description: "Creating memorable experiences"
+  },
+  {
+    name: "HR, Legal and Documentation",
+    description: "Managing human resources and compliance"
+  },
+  {
+    name: "Tech",
+    description: "Building and maintaining digital infrastructure"
   },
 ];
 
 export const teamMembers: TeamMember[] = [
-  // Core Team
+  // Festival Secretaries
   {
     id: "1",
-    name: "John Doe",
-    role: "Overall Coordinator",
-    vertical: "Core Team",
-    image: "/team/john-doe.jpg"
+    name: "Bhavya Sood",
+    role: "Festival Secretary",
+    vertical: "Fest Secretaries",
+    image: "/team/bhavya-sood.jpg"
   },
   {
     id: "2",
-    name: "Jane Smith",
-    role: "Co-Coordinator",
-    vertical: "Core Team",
-    image: "/team/jane-smith.jpg"
+    name: "Adviti Basu",
+    role: "Festival Secretary",
+    vertical: "Fest Secretaries",
+    image: "/team/adviti-basu.jpg"
   },
   
-  // Sports
+  // Deputy Festival Secretaries
   {
     id: "3",
-    name: "Mike Johnson",
-    role: "Sports Head",
-    vertical: "Sports",
-    image: "/team/mike-johnson.jpg"
+    name: "Diya Sandhir",
+    role: "Deputy Fest Secretary",
+    vertical: "Deputy Fest Secretaries",
+    image: "/team/diya-sandhir.jpg"
   },
   {
     id: "4",
-    name: "Sarah Williams",
-    role: "Tournament Manager",
-    vertical: "Sports",
-    image: "/team/sarah-williams.jpg"
+    name: "Antara Malhotra",
+    role: "Deputy Fest Secretary",
+    vertical: "Deputy Fest Secretaries",
+    image: "/team/antara-malhotra.jpg"
   },
   {
     id: "5",
-    name: "David Brown",
-    role: "Fixtures Coordinator",
-    vertical: "Sports",
-    image: "/team/david-brown.jpg"
+    name: "Soham Mishra",
+    role: "Deputy Fest Secretary",
+    vertical: "Deputy Fest Secretaries",
+    image: "/team/soham-mishra.jpg"
   },
-  
-  // Marketing
   {
     id: "6",
-    name: "Emily Davis",
-    role: "Marketing Head",
-    vertical: "Marketing & Outreach",
-    image: "/team/emily-davis.jpg"
+    name: "Kunal Bansal",
+    role: "Deputy Fest Secretary",
+    vertical: "Deputy Fest Secretaries",
+    image: "/team/kunal-bansal.jpg"
   },
+  
+  // Sponsorships & Headliners
   {
     id: "7",
-    name: "Alex Martinez",
-    role: "Sponsorship Lead",
-    vertical: "Marketing & Outreach",
-    image: "/team/alex-martinez.jpg"
+    name: "Ambika Mishra",
+    role: "Sponsorships & Headliners",
+    vertical: "Sponsorships & Headliners",
+    image: "/team/ambika-mishra.jpg"
   },
   {
     id: "8",
-    name: "Sophia Anderson",
-    role: "Social Media Manager",
-    vertical: "Marketing & Outreach",
-    image: "/team/sophia-anderson.jpg"
+    name: "Rida Khan",
+    role: "Sponsorships & Headliners",
+    vertical: "Sponsorships & Headliners",
+    image: "/team/rida-khan.jpg"
   },
-  
-  // Hospitality
   {
     id: "9",
-    name: "Chris Taylor",
-    role: "Hospitality Head",
-    vertical: "Hospitality",
-    image: "/team/chris-taylor.jpg"
-  },
-  {
-    id: "10",
-    name: "Olivia Thomas",
-    role: "Accommodation Manager",
-    vertical: "Hospitality",
-    image: "/team/olivia-thomas.jpg"
+    name: "Kartik Khandelwal",
+    role: "Sponsorships & Headliners",
+    vertical: "Sponsorships & Headliners",
+    image: "/team/kartik-khandelwal.jpg"
   },
   
-  // Logistics
+  // Finance
+  {
+    id: "10",
+    name: "Arshiya Goyal",
+    role: "Finance",
+    vertical: "Finance",
+    image: "/team/arshiya-goyal.jpg"
+  },
+  
+  // Social Media, Design & Marketing
   {
     id: "11",
-    name: "Daniel White",
-    role: "Logistics Head",
-    vertical: "Logistics",
-    image: "/team/daniel-white.jpg"
+    name: "Tejasvini Yadav",
+    role: "Social Media, Design & Marketing",
+    vertical: "Social Media, Design & Marketing",
+    image: "/team/tejasvini-yadav.jpg"
   },
   {
     id: "12",
-    name: "Emma Harris",
-    role: "Operations Manager",
-    vertical: "Logistics",
-    image: "/team/emma-harris.jpg"
+    name: "Avani Goel",
+    role: "Social Media, Design & Marketing",
+    vertical: "Social Media, Design & Marketing",
+    image: "/team/avani-goel.jpg"
   },
   {
     id: "13",
-    name: "Ryan Clark",
-    role: "Equipment Coordinator",
-    vertical: "Logistics",
-    image: "/team/ryan-clark.jpg"
+    name: "Khushi Sethi",
+    role: "Social Media, Design & Marketing",
+    vertical: "Social Media, Design & Marketing",
+    image: "/team/khushi-sethi.jpg"
   },
-  
-  // Design & Media
   {
     id: "14",
-    name: "Ava Lewis",
-    role: "Design Head",
-    vertical: "Design & Media",
-    image: "/team/ava-lewis.jpg"
+    name: "Lakshya Kapoor",
+    role: "Social Media, Design & Marketing",
+    vertical: "Social Media, Design & Marketing",
+    image: "/team/lakshya-kapoor.jpg"
   },
+  
+  // Events and Logistics
   {
     id: "15",
-    name: "Ethan Walker",
-    role: "Photography Lead",
-    vertical: "Design & Media",
-    image: "/team/ethan-walker.jpg"
+    name: "Siddharth Bhatnagar",
+    role: "Events and Logistics",
+    vertical: "Events and Logistics",
+    image: "/team/siddharth-bhatnagar.jpg"
   },
   {
     id: "16",
-    name: "Mia Robinson",
-    role: "Content Creator",
-    vertical: "Design & Media",
-    image: "/team/mia-robinson.jpg"
+    name: "Parth Agarwal",
+    role: "Events and Logistics",
+    vertical: "Events and Logistics",
+    image: "/team/parth-agarwal.jpg"
+  },
+  {
+    id: "17",
+    name: "Akshitha Ashok",
+    role: "Events and Logistics",
+    vertical: "Events and Logistics",
+    image: "/team/akshitha-ashok.jpg"
+  },
+  {
+    id: "18",
+    name: "Sanaya Mehta",
+    role: "Events and Logistics",
+    vertical: "Events and Logistics",
+    image: "/team/sanaya-mehta.jpg"
+  },
+  
+  // Safety and Security
+  {
+    id: "19",
+    name: "Manoj N",
+    role: "Safety and Security",
+    vertical: "Safety and Security",
+    image: "/team/manoj-n.jpg"
+  },
+  {
+    id: "20",
+    name: "Razin",
+    role: "Safety and Security",
+    vertical: "Safety and Security",
+    image: "/team/razin.jpg"
+  },
+  {
+    id: "21",
+    name: "Veda Samhita",
+    role: "Safety and Security",
+    vertical: "Safety and Security",
+    image: "/team/veda-samhita.jpg"
+  },
+  
+  // Outreach & Registration Desk
+  {
+    id: "22",
+    name: "Vidishaa",
+    role: "Outreach & Registration Desk",
+    vertical: "Outreach & Registration Desk",
+    image: "/team/vidishaa.jpg"
+  },
+  {
+    id: "23",
+    name: "Jiya Vaya",
+    role: "Outreach & Registration Desk",
+    vertical: "Outreach & Registration Desk",
+    image: "/team/jiya-vaya.jpg"
+  },
+  {
+    id: "24",
+    name: "Nishita Agarwal",
+    role: "Outreach & Registration Desk",
+    vertical: "Outreach & Registration Desk",
+    image: "/team/nishita-agarwal.jpg"
+  },
+  {
+    id: "25",
+    name: "Nishka Desai",
+    role: "Outreach & Registration Desk",
+    vertical: "Outreach & Registration Desk",
+    image: "/team/nishka-desai.jpg"
+  },
+  
+  // Travel & Hospitality
+  {
+    id: "26",
+    name: "Gia Doshi",
+    role: "Travel & Hospitality",
+    vertical: "Travel & Hospitality",
+    image: "/team/gia-doshi.jpg"
+  },
+  {
+    id: "27",
+    name: "Minal",
+    role: "Travel & Hospitality",
+    vertical: "Travel & Hospitality",
+    image: "/team/minal.jpg"
+  },
+  {
+    id: "28",
+    name: "Anshul Tekriwal",
+    role: "Travel & Hospitality",
+    vertical: "Travel & Hospitality",
+    image: "/team/anshul-tekriwal.jpg"
+  },
+  
+  // Decor and Ceremonies
+  {
+    id: "29",
+    name: "Rajita Rai",
+    role: "Decor and Ceremonies",
+    vertical: "Decor and Ceremonies",
+    image: "/team/rajita-rai.jpg"
+  },
+  {
+    id: "30",
+    name: "Aadya Saxena",
+    role: "Decor and Ceremonies",
+    vertical: "Decor and Ceremonies",
+    image: "/team/aadya-saxena.jpg"
+  },
+  
+  // HR, Legal and Documentation
+  {
+    id: "31",
+    name: "Manya Kapoor",
+    role: "HR, Legal and Documentation",
+    vertical: "HR, Legal and Documentation",
+    image: "/team/manya-kapoor.jpg"
+  },
+  {
+    id: "32",
+    name: "Anshika",
+    role: "HR, Legal and Documentation",
+    vertical: "HR, Legal and Documentation",
+    image: "/team/anshika.jpg"
+  },
+  
+  // Tech
+  {
+    id: "33",
+    name: "Nitin S",
+    role: "Tech",
+    vertical: "Tech",
+    image: "/team/nitin-s.jpg"
+  },
+  {
+    id: "34",
+    name: "Parshwa Doshi",
+    role: "Tech",
+    vertical: "Tech",
+    image: "/team/parshwa-doshi.jpg"
   },
 ];

@@ -3,11 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --agneepath-orange: #ff6b35;
+  --agneepath-red: #ef4444;
+  --agneepath-yellow: #fbbf24;
+  --agneepath-dark: #1a1a1a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-agneepath-orange: var(--agneepath-orange);
+  --color-agneepath-red: var(--agneepath-red);
+  --color-agneepath-yellow: var(--agneepath-yellow);
+  --color-agneepath-dark: var(--agneepath-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
