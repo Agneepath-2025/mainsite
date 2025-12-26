@@ -171,6 +171,23 @@ export default function TeamPage() {
           );
         })}
       </div>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 bg-black">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <p className="text-center text-sm text-gray-400">
+            Developed by{" "}
+            <a
+              href="https://github.com/28nitin07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:text-orange-400 hover:underline transition-colors"
+            >
+              Nitin S
+            </a>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
