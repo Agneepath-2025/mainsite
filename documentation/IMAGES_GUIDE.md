@@ -7,7 +7,6 @@ This guide details all the image assets required for the Agneepath 7.0 website.
 ```
 public/
 ├── team/                # Team member photos
-├── sponsors/            # Sponsor logos
 └── favicon/            # Favicon files
 ```
 
@@ -120,69 +119,7 @@ Files should be named in lowercase with hyphens, matching the names in `lib/team
 
 ---
 
-## 2. Sponsor Logos
-
-**Location:** `/public/sponsors/`
-
-**Required Images:** As needed (currently 12 placeholder sponsors defined)
-
-### Current Sponsor Logo Files
-
-Based on `lib/sponsors-data.ts`, you need:
-
-1. `tech-innovations.png`
-2. `global-sports.png`
-3. `energy-drinks.png`
-4. `digital-media.png`
-5. `apparel.png`
-6. `financial.png`
-7. `restaurant.png`
-8. `transport.png`
-9. `events.png`
-10. `health.png`
-11. `education.png`
-12. `gaming.png`
-
-### Image Specifications
-
-| Property | Requirement |
-|----------|-------------|
-| **Format** | PNG (for transparency) or JPG |
-| **Aspect Ratio** | Square preferred, but flexible |
-| **Minimum Size** | 800x800px |
-| **Recommended Size** | 1000x1000px |
-| **Maximum File Size** | 500KB per logo |
-| **Background** | Transparent (PNG) or White |
-| **Padding** | Include whitespace around logo |
-
-### How to Add Sponsor Logos
-
-1. **Prepare logos:**
-   - Use PNG format with transparent background
-   - Ensure logos have adequate padding/whitespace
-   - Compress images
-
-2. **Copy to public folder:**
-   ```bash
-   cp /path/to/logos/*.png public/sponsors/
-   ```
-
-3. **Update sponsor data:**
-   - Edit `lib/sponsors-data.ts`
-   - Update logo paths, names, and websites
-   - Add or remove sponsors as needed
-
-4. **Test:**
-   ```bash
-   npm run dev
-   # Visit http://localhost:3000/sponsors
-   ```
-
-**See:** [SPONSORS_SETUP.md](./SPONSORS_SETUP.md) for detailed sponsor management guide.
-
----
-
-## 3. Favicon
+## 2. Favicon
 
 **Location:** `/public/favicon/`
 
@@ -213,7 +150,7 @@ If you want to update the favicon:
 
 ---
 
-## 4. Other Images
+## 3. Other Images
 
 ### Logo
 **File:** `/public/logo.png`
@@ -239,17 +176,9 @@ if [ -d "team-photos" ]; then
   echo "✅ Team photos copied"
 fi
 
-# Sponsor logos
-if [ -d "sponsor-logos" ]; then
-  echo "Copying sponsor logos..."
-  cp sponsor-logos/*.png public/sponsors/
-  echo "✅ Sponsor logos copied"
-fi
-
 # Verify
 echo ""
 echo "Team photos: $(ls public/team/*.jpg 2>/dev/null | wc -l) files"
-echo "Sponsor logos: $(ls public/sponsors/*.png 2>/dev/null | wc -l) files"
 echo ""
 echo "✅ Image setup complete!"
 ```
@@ -293,10 +222,9 @@ chmod +x setup-images.sh
 Before deploying to production:
 
 - [ ] All 36 team member photos added to `/public/team/`
-- [ ] All sponsor logos added to `/public/sponsors/`
 - [ ] All images optimized (< 500KB each)
 - [ ] All images follow naming convention
-- [ ] Tested locally at `/meet-the-team` and `/sponsors`
+- [ ] Tested locally at `/meet-the-team`
 - [ ] Images display correctly on all devices
 - [ ] No broken image placeholders
 - [ ] Favicon displays in browser tabs
@@ -312,12 +240,6 @@ Before deploying to production:
 4. Clear browser cache
 5. Rebuild: `npm run build`
 
-### Sponsor logo not showing
-1. Verify path in `lib/sponsors-data.ts`
-2. Check file exists in `/public/sponsors/`
-3. Ensure PNG has transparent background or white bg
-4. Check file size (should be < 500KB)
-
 ### Favicon not updating
 1. Clear browser cache (Cmd+Shift+R on Mac)
 2. Check files exist in `/public/favicon/`
@@ -330,7 +252,6 @@ Before deploying to production:
 
 For technical assistance with images:
 - Check main [README.md](../README.md)
-- Review [SPONSORS_SETUP.md](./SPONSORS_SETUP.md) for sponsor details
 - Contact the Tech team
 
 ---
