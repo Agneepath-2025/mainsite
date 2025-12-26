@@ -47,6 +47,23 @@ export default function AccommodationsPage() {
           </a>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 bg-black mt-20">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <p className="text-center text-sm text-gray-400">
+            Developed by{" "}
+            <a
+              href="https://github.com/shristi2217/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:text-orange-400 hover:underline transition-colors"
+            >
+              Shristi Sharma
+            </a>
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
