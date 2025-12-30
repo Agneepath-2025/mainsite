@@ -2,9 +2,17 @@
 
 import { motion } from "framer-motion";
 
-export default function AnimatedHeroBackground() {
+type AnimatedHeroBackgroundProps = {
+  className?: string;
+};
+
+export default function AnimatedHeroBackground({
+  className = "",
+}: AnimatedHeroBackgroundProps) {
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div
+      className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}
+    >
       <motion.div
         className="absolute -top-20 -left-20 w-80 h-80 bg-gradient-to-br from-orange-400/20 to-yellow-400/20 rounded-full blur-3xl"
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
