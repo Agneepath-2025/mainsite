@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,19 +18,7 @@ export const metadata: Metadata = {
   description:
     "Official website for Agneepath 7.0, Ashoka University's premier sports festival",
   icons: {
-    icon: [
-      { url: "/favicon/favicon.ico" },
-      {
-        url: "/favicon/favicon-16x16.png",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        url: "/favicon/favicon-32x32.png",
-        sizes: "32x32",
-        type: "image/png",
-      },
-    ],
+    icon: "/logo.png",
     apple: "/logo.png",
   },
 };
@@ -44,7 +33,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main className="pt-20">{children}</main>
       </body>
     </html>
   );
