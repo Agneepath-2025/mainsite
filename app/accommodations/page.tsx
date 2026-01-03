@@ -8,7 +8,7 @@ export default function AccommodationsPage() {
     <main className="min-h-screen bg-[#242A4A]">
      
       {/* HERO SECTION */}
-      <section className="relative min-h-[45vh] pt-28 md:pt-32 flex items-center bg-[#242A4A] overflow-hidden">
+      <section className="relative min-h-[45vh] pt-24 md:pt-20 flex items-center bg-[#242A4A] overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

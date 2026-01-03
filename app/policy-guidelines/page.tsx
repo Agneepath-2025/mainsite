@@ -7,7 +7,7 @@ export default function PolicyGuidelinesPage() {
   return (
     <main className="min-h-screen bg-[#242A4A]">
       {/* HERO SECTION */}
-      <section className="relative min-h-[45vh] pt-28 md:pt-32 bg-[#242A4A] flex items-center overflow-hidden">
+      <section className="relative min-h-[45vh] pt-24 md:pt-20 bg-[#242A4A] flex items-center overflow-hidden">
         <div className="absolute inset-0 opacity-0 pointer-events-none">
           <AnimatedHeroBackground />
         </div>

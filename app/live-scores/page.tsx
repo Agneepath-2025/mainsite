@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion";
 import { Trophy, Clock } from "lucide-react";
-import { ScrollProgress } from "@/components/scroll-progress";
+
 import AnimatedHeroBackground from "@/components/AnimatedHeroBackground";
 
 export default function LiveScoresPage() {
   return (
     <main className="min-h-screen bg-[#242A4A]">
-      <ScrollProgress />
+      
 
       {/* HERO SECTION */}
-      <section className="relative min-h-[45vh] pt-28 md:pt-32 flex items-center bg-[#242A4A] overflow-hidden">
+      <section className="relative min-h-[45vh] pt-24 md:pt-20 flex items-center bg-[#242A4A] overflow-hidden">
         <AnimatedHeroBackground className="absolute inset-0 opacity-20" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
