@@ -21,79 +21,41 @@ export default function TeamPage() {
 
   const item = {
     hidden: { opacity: 0, y: 10 },
-    show: { 
-      opacity: 1, 
+    show: {
+      opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.3,
-      }
+      transition: { duration: 0.3 },
     },
   };
 
-  const getTeamByVertical = (verticalName: string) => {
-    return teamMembers.filter((member) => member.vertical === verticalName);
-  };
+  const getTeamByVertical = (verticalName: string) =>
+    teamMembers.filter((member) => member.vertical === verticalName);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
+    <div className="min-h-screen bg-[#242A4A]">
       <ScrollProgress />
-      
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        {/* Animated background shapes */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <motion.div
-            className="absolute top-20 -left-20 w-72 h-72 bg-gradient-to-br from-orange-400/20 to-red-400/20 rounded-full blur-3xl"
-            animate={{ 
-              x: [0, 50, 0],
-              y: [0, 30, 0],
-            }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          />
-          <motion.div
-            className="absolute top-40 -right-20 w-96 h-96 bg-gradient-to-br from-yellow-400/20 to-orange-400/20 rounded-full blur-3xl"
-            animate={{ 
-              x: [0, -50, 0],
-              y: [0, 40, 0],
-            }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          />
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="max-w-3xl"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full"
-            >
-              <p className="text-sm font-medium text-white tracking-wide uppercase">
-                🔥 Agneepath 7.0
-              </p>
-            </motion.div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 bg-clip-text text-transparent mb-6 tracking-tight">
-              Meet the Team
-            </h1>
 
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              The passionate individuals behind Ashoka University&apos;s premier sports festival.
-            </p>
-          </motion.div>
-        </div>
-      </div>
+      {/* Hero Section */}
+      <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="max-w-3xl mx-auto text-center mt-16 md:mt-24"
+>
+
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+          Meet the Team
+        </h1>
+
+        <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+          The passionate individuals behind Ashoka University&apos;s premier sports festival.
+        </p>
+      </motion.div>
 
       {/* Team Sections */}
       <div className="max-w-7xl mx-auto px-6 py-20">
-        {verticals.map((vertical, verticalIndex) => {
+        {verticals.map((vertical) => {
           const members = getTeamByVertical(vertical.name);
-          
           if (members.length === 0) return null;
 
           return (
@@ -106,46 +68,52 @@ export default function TeamPage() {
               className="mb-24 last:mb-0"
             >
               {/* Vertical Header */}
-              <div className="mb-10 relative">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-2 h-8 bg-gradient-to-b from-orange-500 to-red-500 rounded-full" />
-                  <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                    {vertical.name}
-                  </h2>
-                </div>
-                <p className="text-sm text-gray-600 ml-5">{vertical.description}</p>
+              <div className="mb-14 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  {vertical.name}
+                </h2>
+                <p className="text-sm text-gray-300 max-w-xl mx-auto">
+                  {vertical.description}
+                </p>
               </div>
 
-              {/* Team Members Grid */}
+              {/* Team Grid */}
               <motion.div
                 variants={container}
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.1 }}
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                className="
+                  grid
+                  justify-center
+                  row-gap-10
+                  [column-gap:clamp(1.5rem,4vw,4rem)]
+                  [grid-template-columns:repeat(auto-fit,minmax(260px,260px))]
+                "
               >
                 {members.map((member) => (
-                  <motion.div
-                    key={member.id}
-                    variants={item}
-                  >
-                    <Card className="group relative overflow-hidden border-2 border-gray-200 hover:border-orange-400 hover:shadow-2xl hover:shadow-orange-200/50 transition-all duration-300">
-                      {/* Image Container */}
-                      <div className="relative aspect-square bg-gradient-to-br from-orange-50 to-red-50 overflow-hidden">
-                        {/* Colorful gradient overlay on hover */}
+                  <motion.div key={member.id} variants={item}>
+                    <Card
+                      className="
+                        w-[260px]
+                        h-[360px]
+                        bg-[#2C355D]
+                        border border-white/10
+                        hover:border-white/40
+                        transition-all duration-300
+                        flex flex-col
+                      "
+                    >
+                      <div className="relative aspect-square bg-[#242A4A] overflow-hidden">
                         <motion.div
-                          className="absolute inset-0 bg-gradient-to-t from-orange-600/80 via-red-600/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
-                          initial={false}
+                          className="absolute inset-0 bg-gradient-to-t from-white/20 via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
                         />
-                        
                         {member.image ? (
                           <Image
                             src={member.image}
                             alt={member.name}
                             fill
-                            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                             className="object-cover group-hover:scale-110 transition-transform duration-500"
-                            priority={false}
                           />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center">
@@ -154,26 +122,37 @@ export default function TeamPage() {
                         )}
                       </div>
 
-                      {/* Member Info */}
-                      <div className="p-4 bg-white group-hover:bg-gradient-to-br group-hover:from-orange-50 group-hover:to-white transition-colors duration-300">
-                        <h3 className="font-bold text-gray-900 group-hover:text-orange-700 text-base mb-1 transition-colors">
+                      <div className="p-4 bg-[#2C355D]">
+                        <h3 className="font-bold text-white group-hover:text-[#FFA543] transition-colors">
                           {member.name}
                         </h3>
-                        <p className="text-sm text-gray-600 group-hover:text-orange-600 transition-colors">
+                        <p className="text-sm text-gray-300 group-hover:text-[#FFA543] transition-colors">
                           {member.role}
                         </p>
+
+                        <div className="flex justify-center mt-16">
+                          <div className="h-px w-16 bg-white/10" />
+                        </div>
                       </div>
                     </Card>
                   </motion.div>
                 ))}
               </motion.div>
+
+              {/* SECTION DIVIDER — ONLY FOR SPECIFIC SECTIONS */}
+              {(vertical.name === "Fest Secretaries" ||
+                vertical.name === "Deputy Fest Secretaries") && (
+                <div className="flex justify-center mt-20">
+                  <div className="h-px w-48 bg-white/10" />
+                </div>
+              )}
             </motion.div>
           );
         })}
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-gray-800 bg-black">
+      <footer className="border-t border-white/10 bg-black">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <p className="text-center text-sm text-gray-400">
             Developed by{" "}
@@ -181,7 +160,7 @@ export default function TeamPage() {
               href="https://github.com/28nitin07"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-white hover:text-orange-400 hover:underline transition-colors"
+              className="font-semibold text-white hover:text-[#FFA543] hover:underline transition-colors"
             >
               Nitin S
             </a>
