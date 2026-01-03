@@ -40,7 +40,7 @@ export default function TeamPage() {
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5 }}
-  className="max-w-3xl mx-auto text-center mt-16 md:mt-24"
+  className="max-w-3xl mx-auto text-center pt-16 md:pt-24"
 >
 
         <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">

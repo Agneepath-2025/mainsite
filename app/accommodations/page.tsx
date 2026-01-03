@@ -1,21 +1,28 @@
 "use client";
 
+import { motion } from "framer-motion";
 /*import AnimatedHeroBackground from "@/components/AnimatedHeroBackground";*/
 
 export default function AccommodationsPage() {
   return (
     <main className="min-h-screen bg-[#242A4A]">
      
+      {/* HERO SECTION */}
       <section className="relative min-h-[45vh] pt-28 md:pt-32 flex items-center bg-[#242A4A] overflow-hidden">
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="relative z-10 max-w-6xl mx-auto px-6 text-center"
+        >
           <h1 className="text-5xl font-bold text-white mb-4">
-            Accommodation & Travel
+            Accommodation
           </h1>
 
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Accommodation information for participants attending Agneepath 7.0.
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* CONTENT SECTION */}

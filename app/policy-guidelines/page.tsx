@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import AnimatedHeroBackground from "@/components/AnimatedHeroBackground";
 
 export default function PolicyGuidelinesPage() {
@@ -11,7 +12,12 @@ export default function PolicyGuidelinesPage() {
           <AnimatedHeroBackground />
         </div>
 
-        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="relative z-10 max-w-6xl mx-auto px-6 text-center"
+        >
           <h1 className="text-5xl font-bold text-[#FFA543] mb-4">
             Policies & Guidelines
           </h1>
@@ -19,7 +25,7 @@ export default function PolicyGuidelinesPage() {
             Please go through the following rules, guidelines, and documents
             carefully before participating.
           </p>
-        </div>
+        </motion.div>
       </section>
 
       {/* CONTENT SECTION */}
