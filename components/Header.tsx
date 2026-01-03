@@ -36,7 +36,7 @@ export default function Header() {
         {/* RIGHT: REGISTER */}
         <div className="ml-auto">
           <Link
-            href="https://register.agneepath.co.in/SignIn"
+            href="https://register.agneepath.co.in/"
             className="bg-orange-500 hover:bg-orange-600 text-white text-base px-5 py-2 rounded-full font-medium"
           >
             Register
