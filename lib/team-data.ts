@@ -85,7 +85,7 @@ export const teamMembers: TeamMember[] = [
     name: "Diya Sandhir",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/diya-sandhir.jpg"
+    image: "/team/Diya Sandhir.jpeg"
   },
   {
     id: "4",
@@ -99,14 +99,14 @@ export const teamMembers: TeamMember[] = [
     name: "Soham Mishra",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/soham-mishra.jpg"
+    image: "/team/SohamMishra.JPG"
   },
   {
     id: "6",
     name: "Kunal Bansal",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/kunal-bansal.jpg"
+    image: "/team/KunalBansal.jpeg"
   },
   
   // Sponsorships & Headliners
@@ -192,21 +192,21 @@ export const teamMembers: TeamMember[] = [
     name: "Siddharth Bhatnagar",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/siddharth-bhatnagar.jpg"
+    image: "/team/siddharth-bhatnagar.JPG"
   },
   {
     id: "18",
     name: "Parth Agarwal",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/parth-agarwal.jpg"
+    image: "/team/parth agarwal.jpg"
   },
   {
     id: "19",
     name: "Akshitha Ashok",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/akshitha-ashok.jpg"
+    image: "/team/akshitha ashok.jpg"
   },
   {
     id: "20",
@@ -307,14 +307,14 @@ export const teamMembers: TeamMember[] = [
     name: "Manya Kapoor",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
-    image: "/team/manya-kapoor.jpg"
+    image: "/team/manyakapoor.jpg"
   },
   {
     id: "33",
     name: "Anshika Sarraf",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
-    image: "/team/anshika-sarraf.jpg"
+    image: "/team/anshikasarraf.jpg"
   },
   
   // Tech
