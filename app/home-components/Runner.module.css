@@ -1,0 +1,9 @@
+.runner {
+  position: fixed;
+  top: 6%;
+  left: 5%;
+  background-image: url('/runner.png');
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  z-index: 1000;
+}
