@@ -21,8 +21,8 @@ export default function FootballFieldBackground() {
   return (
     <div className="absolute inset-0">
       {/* Field base */}
-      <div className="absolute inset-0 bg-green-800" />
-      <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,#1f6f1f,#1f6f1f_40px,#2f8f2f_40px,#2f8f2f_80px)]" />
+      <div className="absolute inset-0 bg-[#242A4A]" />
+      <div className="absolute inset-0 bg-[#242A4A]" />
 
       {/* Center line */}
       <div className="absolute top-0 bottom-0 left-1/2 w-[4px] bg-white/60" />

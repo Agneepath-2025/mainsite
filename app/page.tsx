@@ -8,6 +8,7 @@ import { SectionActivationProvider } from './home-components/SectionActivationCo
 import BackgroundStage from './home-components/BackgroundStage';
 import ShadowOverlay from './home-components/ShadowOverlay';
 import ReelSection from './home-components/ReelSection';
+import EventSection from './home-components/EventSection';
 
 export default function Home() {
   return (
@@ -22,9 +23,13 @@ export default function Home() {
         
         <div className="max-w-6xl mx-auto px-6 mt-16 space-y-28">
           <ReelSection src="/reel.mp4" shrinkRange={600} />
-          <div className='p-5'></div>
+          <div className='p-15'></div>
           <section className="rounded-lg p-10 shadow-lg bg-black/20">
-            <AboutUsSection />
+            <AboutUsSection 
+            />
+          </section>
+          <section className="rounded-lg p-10 shadow-lg bg-black/20">
+            <EventSection />
           </section>
           <section className="rounded-lg p-10 shadow-lg bg-black/20">
             <CampusMap />
