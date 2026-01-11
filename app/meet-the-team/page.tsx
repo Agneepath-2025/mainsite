@@ -6,7 +6,6 @@ import { teamMembers, verticals } from "@/lib/team-data";
 import { User } from "lucide-react";
 import Image from "next/image";
 
-
 export default function TeamPage() {
   const container = {
     hidden: { opacity: 0 },
@@ -32,29 +31,27 @@ export default function TeamPage() {
     teamMembers.filter((member) => member.vertical === verticalName);
 
   return (
-    <div className="min-h-screen bg-[#242A4A]">
-     
-
+    <div className="min-h-screen bg-[#FFFDF9]">
       {/* HERO SECTION */}
-      <section className="relative min-h-[45vh] pt-24 md:pt-20 flex items-center bg-[#242A4A]">
+      <section className="relative min-h-[45vh] pt-24 md:pt-20 flex items-center bg-[#FFFDF9]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto px-6 text-center"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
             Meet the Team
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             The passionate individuals behind Ashoka University&apos;s premier sports festival.
           </p>
         </motion.div>
       </section>
 
       {/* CONTENT SECTION */}
-      <section className="py-16 bg-[#242A4A]">
+      <section className="py-16 bg-[#FFFDF9]">
         <div className="max-w-7xl mx-auto px-6">
           {verticals.map((vertical) => {
             const members = getTeamByVertical(vertical.name);
@@ -71,10 +68,11 @@ export default function TeamPage() {
               >
                 {/* Vertical Header */}
                 <div className="mb-14 text-center">
-                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                    {vertical.name}
-                  </h2>
-                  <p className="text-sm text-gray-300 max-w-xl mx-auto">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#9A1B1F] mb-2">
+  {vertical.name}
+</h2>
+                 <p className="text-sm text-[#242A4A]/70 max-w-xl mx-auto">
+
                     {vertical.description}
                   </p>
                 </div>
@@ -95,17 +93,19 @@ export default function TeamPage() {
                 >
                   {members.map((member) => (
                     <motion.div key={member.id} variants={item}>
-                      <Card
-                        className="
-                          w-[260px]
-                          h-[360px]
-                          bg-[#2C355D]
-                          border border-white/10
-                          hover:border-white/40
-                          transition-all duration-300
-                          flex flex-col
-                        "
-                      >
+                     <Card
+  className="
+    w-[260px]
+    h-[360px]
+    bg-[#2C355D]
+    border border-white/10
+    hover:border-white/40
+    transition-all duration-300
+    flex flex-col
+  "
+>
+
+
                         <div className="relative aspect-square bg-[#242A4A] overflow-hidden">
                           {member.image ? (
                             <Image
@@ -122,10 +122,11 @@ export default function TeamPage() {
                         </div>
 
                         <div className="p-4 bg-[#2C355D]">
-                          <h3 className="font-bold text-white">
+
+                         <h3 className="font-bold text-white">
                             {member.name}
                           </h3>
-                          <p className="text-sm text-gray-300">
+                         <p className="text-sm text-gray-300">
                             {member.role}
                           </p>
 
@@ -141,7 +142,7 @@ export default function TeamPage() {
                 {(vertical.name === "Fest Secretaries" ||
                   vertical.name === "Deputy Fest Secretaries") && (
                   <div className="flex justify-center mt-20">
-                    <div className="h-px w-48 bg-white/10" />
+                    <div className="h-px w-48 bg-gray-300/40" />
                   </div>
                 )}
               </motion.div>
@@ -151,15 +152,15 @@ export default function TeamPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 bg-black">
+      <footer className="border-t border-gray-200 bg-[#FFFDF9]">
         <div className="max-w-7xl mx-auto px-6 py-6">
-          <p className="text-center text-sm text-gray-400">
+          <p className="text-center text-sm text-gray-500">
             Developed by{" "}
             <a
               href="https://github.com/28nitin07"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-white hover:text-[#FFA543] hover:underline transition-colors"
+              className="font-semibold text-[#242A4A] hover:text-[#FFA543] hover:underline transition-colors"
             >
               Nitin S
             </a>
