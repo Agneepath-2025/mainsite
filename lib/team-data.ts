@@ -213,7 +213,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sanaya Mehta",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/sanaya-mehta.jpeg"
+    image: "/team/sanaya-mehta.jpg"
   },
   
   // Safety and Security
@@ -222,14 +222,14 @@ export const teamMembers: TeamMember[] = [
     name: "Manoj N",
     role: "Safety and Security",
     vertical: "Safety and Security",
-    image: "/team/manoj-n.jpg"
+    image: "/team/Manoj.jpeg"
   },
   {
     id: "22",
     name: "Muhammed Razin",
     role: "Safety and Security",
     vertical: "Safety and Security",
-    image: "/team/muhammed-razin.jpg"
+    image: "/team/razin.JPG"
   },
   {
     id: "23",
@@ -245,7 +245,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vidishaa Mundhra ",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
-    image: "/team/vidishaa-mundhra.jpg"
+    image: "/team/vidishaa-mundhra.jpeg"
   },
   {
     id: "25",
@@ -259,7 +259,7 @@ export const teamMembers: TeamMember[] = [
     name: "Nishka Desai",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
-    image: "/team/nishka-desai.jpg"
+    image: "/team/Nishka-Desai.jpeg"
   },
   
   // Travel & Hospitality
@@ -282,7 +282,7 @@ export const teamMembers: TeamMember[] = [
     name: "Anshul Tekriwal",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
-    image: "/team/anshul-tekriwal.jpg"
+    image: "/team/anshul.tekriwal.jpg"
   },
   
   // Decor and Ceremonies
@@ -307,7 +307,7 @@ export const teamMembers: TeamMember[] = [
     name: "Manya Kapoor",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
-    image: "/team/manyakapoor.jpg"
+    image: "/team/manya-kapoor.jpg"
   },
   {
     id: "33",
