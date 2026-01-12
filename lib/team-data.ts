@@ -323,7 +323,7 @@ export const teamMembers: TeamMember[] = [
     name: "Nitin S",
     role: "Tech",
     vertical: "Tech",
-    image: "/team/nitin-s.jpg"
+    image: "/team/nitin.jpg"
   },
   {
     id: "35",
