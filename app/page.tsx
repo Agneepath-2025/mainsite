@@ -9,31 +9,40 @@ import BackgroundStage from './home-components/BackgroundStage';
 import ShadowOverlay from './home-components/ShadowOverlay';
 import ReelSection from './home-components/ReelSection';
 
+
+
+
 export default function Home() {
   return (
-    <SectionActivationProvider>
-      
-      <BackgroundStage />
-      <ShadowOverlay />
+   <SectionActivationProvider>
+  <BackgroundStage />
+  <ShadowOverlay />
+  <Runner />
 
-      <Runner />
+  <main className="relative z-20 min-h-screen text-white">
 
-      <main className="relative z-20 min-h-screen overflow-auto text-white pt-[96px]">
-        
-        <div className="max-w-6xl mx-auto px-6 mt-16 space-y-28">
-          <ReelSection src="/reel.mp4" shrinkRange={600} />
-          <div className='p-5'></div>
-          <section className="rounded-lg p-10 shadow-lg bg-black/20">
-            <AboutUsSection />
-          </section>
-          <section className="rounded-lg p-10 shadow-lg bg-black/20">
-            <CampusMap />
-          </section>
-          <section className="rounded-lg p-10 shadow-lg bg-black/20">
-            <Contact />
-          </section>
-        </div>
-      </main>
-    </SectionActivationProvider>
+    {/* HERO VIDEO */}
+    <ReelSection src="/reel.mp4" />
+
+    {/* ABOUT US — NOW BELOW VIDEO */}
+    <div className="max-w-6xl mx-auto px-6 mt-24 space-y-28">
+      <section className="rounded-lg p-10 shadow-lg bg-black/20">
+        <AboutUsSection />
+      </section>
+
+      <section className="rounded-lg p-10 shadow-lg bg-black/20">
+        <CampusMap />
+      </section>
+
+      <section className="rounded-lg p-10 shadow-lg bg-black/20">
+        <Contact />
+      </section>
+    </div>
+
+  </main>
+</SectionActivationProvider>
+
+
+
   );
 }

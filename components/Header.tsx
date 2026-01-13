@@ -26,9 +26,7 @@ export default function Header() {
           <Link href="/" className="text-white/80 hover:text-white transition">
             Home
           </Link>
-          <Link href="/about-us" className="text-white/80 hover:text-white transition">
-            About Us
-          </Link>
+          
           <Link href="/meet-the-team" className="text-white/80 hover:text-white transition">
             Meet the Team
           </Link>

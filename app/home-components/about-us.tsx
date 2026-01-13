@@ -1,4 +1,6 @@
-"use client";
+'use client';
+// cleanup: removed LogoScroller reference
+
 
 import { motion } from "framer-motion";
 import { useRef } from "react";
