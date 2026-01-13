@@ -1,55 +1,100 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function GalleryPage() {
   return (
-    <main className="min-h-screen bg-[#242A4A] text-white">
+    <main className="min-h-screen bg-[#fefcfb] text-gray-800">
 
-      {/* HERO */}
-      <section className="pt-32 md:pt-40 pb-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Gallery
-        </h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          Moments captured from previous Agneepath events.
-        </p>
+      {/* PAGE HEADER */}
+      <section className="pt-32 pb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl mx-auto px-6 text-center"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
+            Gallery
+          </h1>
+
+          <p className="text-lg md:text-xl text-gray-600">
+            Moments captured from previous Agneepath events.
+          </p>
+        </motion.div>
       </section>
 
-      {/* FEATURED SECTION */}
-      <section className="pb-24">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          {/* VERTICAL FEATURE */}
-          <div className="md:row-span-2 rounded-2xl bg-[#2c355d] flex items-center justify-center text-gray-300 h-[420px] md:h-auto">
-            Vertical Feature
-          </div>
-
-          {/* RIGHT STACK */}
-          <div className="rounded-2xl bg-[#2c355d] flex items-center justify-center text-gray-300 h-[200px]">
-            Horizontal
-          </div>
-          <div className="rounded-2xl bg-[#2c355d] flex items-center justify-center text-gray-300 h-[200px]">
-            Horizontal
-          </div>
-
-        </div>
-      </section>
-
-      {/* MAIN GALLERY GRID */}
+      {/* GALLERY GRID */}
       <section className="pb-32">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {Array.from({ length: 12 }).map((_, i) => (
-              <div
-                key={i}
-                className="rounded-2xl bg-[#2c355d] h-[200px] flex items-center justify-center text-gray-400 uppercase tracking-wide text-sm"
-              >
-                Image {i + 1}
-              </div>
-            ))}
+          <div className="grid grid-cols-3 auto-rows-[200px] gap-6">
+
+            {/* ROW 1 */}
+            <Image src="/gallery/v2.jpg" />
+            <Image src="/gallery/v3.jpg" />
+            <Image src="/gallery/v4.jpg" />
+
+            {/* LEFT VERTICAL */}
+            <Image src="/gallery/v1.jpg" vertical />
+
+            {/* ROW 2 */}
+            <Image src="/gallery/v5.jpg" />
+            <Image src="/gallery/v6.jpg" />
+
+            {/* ROW 3 */}
+            <Image src="/gallery/v7.jpg" />
+            <Image src="/gallery/v9.jpg" />
+
+            {/* ROW 4 */}
+            <Image src="/gallery/v10.jpg" />
+            <Image src="/gallery/v11.jpg" />
+
+            {/* RIGHT VERTICAL */}
+            <Image src="/gallery/v8.png" vertical />
+
+            {/* ROW 5 */}
+            <Image src="/gallery/v12.jpg" />
+            <Image src="/gallery/v13.jpg" />
+
           </div>
         </div>
       </section>
 
+      {/* FOOTER */}
+      <footer className="border-t border-gray-200 bg-[#fefcfb]">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <p className="text-center text-sm text-gray-500">
+            Developed by{" "}
+            <span className="font-semibold text-[#242A4A]">
+              Shristi Sharma
+            </span>
+          </p>
+        </div>
+      </footer>
+
     </main>
+  );
+}
+
+/* IMAGE COMPONENT */
+function Image({
+  src,
+  vertical = false,
+}: {
+  src: string;
+  vertical?: boolean;
+}) {
+  return (
+    <div
+      className={`rounded-2xl overflow-hidden bg-[#2c355d] ${
+        vertical ? "row-span-2" : ""
+      }`}
+    >
+      <img
+        src={src}
+        alt="Gallery image"
+        className="w-full h-full object-cover"
+      />
+    </div>
   );
 }
