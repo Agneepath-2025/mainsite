@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function AboutUsPage() {
   return (
@@ -31,7 +29,7 @@ export default function AboutUsPage() {
       <section className="px-6 py-20 space-y-24">
 
         {/* CARD 1 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             Welcome to Agneepath 6.0
           </h2>
@@ -50,7 +48,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* CARD 2 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
           <div className="h-1 w-24 bg-orange-400 mb-6" />
 
@@ -61,7 +59,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* CARD 3 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Event Highlights</h2>
           <div className="h-1 w-24 bg-orange-400 mb-6" />
 
@@ -88,7 +86,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* CARD 4 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             What Makes Agneepath Special
           </h2>
@@ -105,7 +103,7 @@ export default function AboutUsPage() {
 
       </section>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <footer className="border-t border-gray-200 bg-[#fefcfb]">
         <div className="max-w-7xl mx-auto px-6 py-6">
           <p className="text-center text-sm text-gray-500">
@@ -116,6 +114,7 @@ export default function AboutUsPage() {
           </p>
         </div>
       </footer>
+
     </main>
   );
 }

@@ -32,23 +32,27 @@ export default function LiveScoresPage() {
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.2 }}
     className="
-      max-w-3xl
+      max-w-6xl
       mx-auto
-      px-6
+      px-10
       bg-[#2c355d]
       rounded-2xl
       shadow-lg
-      p-12
       text-center
+      flex
+      flex-col
+      justify-center
+      min-h-[320px]
+      py-20
     "
   >
-    <h2 className="text-3xl font-bold text-white mb-4">
+    <h2 className="text-3xl font-bold text-white mb-6">
       Coming Soon
     </h2>
 
-    <div className="h-1 w-20 bg-orange-400 mx-auto mb-6" />
+    <div className="h-1 w-24 bg-orange-400 mx-auto mb-8" />
 
-    <p className="text-gray-200 max-w-xl mx-auto">
+    <p className="text-gray-200 text-lg leading-relaxed max-w-3xl mx-auto">
       Live score tracking will be available during the event. Stay tuned
       for real-time updates across all matches and competitions.
     </p>
