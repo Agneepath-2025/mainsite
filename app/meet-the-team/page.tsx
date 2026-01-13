@@ -40,7 +40,8 @@ export default function TeamPage() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto px-6 text-center"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
+
             Meet the Team
           </h1>
 

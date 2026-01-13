@@ -16,7 +16,7 @@ export default function AboutUsPage() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto px-6 text-center"
         >
-          <h1 className="text-3xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
             About Agneepath
           </h1>
 
@@ -28,10 +28,10 @@ export default function AboutUsPage() {
       </section>
 
       {/* CONTENT */}
-      <section className="max-w-5xl mx-auto px-6 py-20 space-y-24">
+      <section className="px-6 py-20 space-y-24">
 
         {/* CARD 1 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             Welcome to Agneepath 6.0
           </h2>
@@ -50,7 +50,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* CARD 2 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
           <div className="h-1 w-24 bg-orange-400 mb-6" />
 
@@ -61,7 +61,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* CARD 3 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Event Highlights</h2>
           <div className="h-1 w-24 bg-orange-400 mb-6" />
 
@@ -88,7 +88,7 @@ export default function AboutUsPage() {
         </div>
 
         {/* CARD 4 */}
-        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white">
+        <div className="bg-[#2c355d] rounded-2xl shadow-lg p-10 text-white max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             What Makes Agneepath Special
           </h2>
