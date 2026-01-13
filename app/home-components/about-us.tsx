@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import LogoScroller from "@/home-components/LogoScroller";
 
 export default function AboutUsSection() {
   const ref = useRef<HTMLDivElement>(null);
