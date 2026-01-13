@@ -323,14 +323,14 @@ export const teamMembers: TeamMember[] = [
     name: "Nitin S",
     role: "Tech",
     vertical: "Tech",
-    image: "/team/nitin.jpg"
+    image: "/team/nitin-s.png"
   },
   {
     id: "35",
     name: "Parshwa Doshi",
     role: "Tech",
     vertical: "Tech",
-    image: "/team/parshwa-doshi.jpg"
+    image: "/team/parshwa-doshi.jpeg"
   },
   {
     id: "36",
