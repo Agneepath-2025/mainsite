@@ -1,72 +1,52 @@
 "use client";
 
-import Masonry from "@/components/Masonry";
-
 export default function GalleryPage() {
-  const items = [
-    {
-      id: "1",
-      img: "/gallery/1.jpg",
-      url: "/gallery/1.jpg",
-      height: 400,
-    },
-    {
-      id: "2",
-      img: "/gallery/2.jpg",
-      url: "/gallery/2.jpg",
-      height: 500,
-    },
-    {
-      id: "3",
-      img: "/gallery/3.jpg",
-      url: "/gallery/3.jpg",
-      height: 350,
-    },
-    {
-      id: "4",
-      img: "/gallery/4.jpg",
-      url: "/gallery/4.jpg",
-      height: 450,
-    },
-    {
-      id: "5",
-      img: "/gallery/5.jpg",
-      url: "/gallery/5.jpg",
-      height: 380,
-    },
-    {
-      id: "6",
-      img: "/gallery/6.jpg",
-      url: "/gallery/6.jpg",
-      height: 520,
-    },
-  ];
-
   return (
-    <main className="min-h-screen bg-[#fefcfb]">
+    <main className="min-h-screen bg-[#242A4A] text-white">
 
-      {/* HEADER — SAME AS CONTACT / ABOUT */}
-      <section className="pt-32 pb-20 text-center px-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-4">
+      {/* HERO */}
+      <section className="pt-32 md:pt-40 pb-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Gallery
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
           Moments captured from previous Agneepath events.
         </p>
       </section>
 
-      {/* MASONRY */}
-      <section className="pb-32 px-6">
-        <div className="max-w-7xl mx-auto relative min-h-[600px]">
-          <Masonry
-            items={items}
-            animateFrom="bottom"
-            stagger={0.06}
-            scaleOnHover={true}
-            hoverScale={0.95}
-            blurToFocus={true}
-            colorShiftOnHover={false}
-          />
+      {/* FEATURED SECTION */}
+      <section className="pb-24">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          {/* VERTICAL FEATURE */}
+          <div className="md:row-span-2 rounded-2xl bg-[#2c355d] flex items-center justify-center text-gray-300 h-[420px] md:h-auto">
+            Vertical Feature
+          </div>
+
+          {/* RIGHT STACK */}
+          <div className="rounded-2xl bg-[#2c355d] flex items-center justify-center text-gray-300 h-[200px]">
+            Horizontal
+          </div>
+          <div className="rounded-2xl bg-[#2c355d] flex items-center justify-center text-gray-300 h-[200px]">
+            Horizontal
+          </div>
+
+        </div>
+      </section>
+
+      {/* MAIN GALLERY GRID */}
+      <section className="pb-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {Array.from({ length: 12 }).map((_, i) => (
+              <div
+                key={i}
+                className="rounded-2xl bg-[#2c355d] h-[200px] flex items-center justify-center text-gray-400 uppercase tracking-wide text-sm"
+              >
+                Image {i + 1}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
