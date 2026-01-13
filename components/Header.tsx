@@ -7,7 +7,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto h-20 px-6 flex items-center">
 
         {/* LEFT: LOGO */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
             src="/logo-final.png"
             alt="Agneepath"
@@ -20,10 +20,13 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* MIDDLE: NAV LINKS */}
+        {/* NAV: PAGES */}
         <nav className="hidden md:flex items-center gap-8 ml-24">
           <Link href="/" className="text-white/80 hover:text-white transition">
             Home
+          </Link>
+          <Link href="/about-us" className="text-white/80 hover:text-white transition">
+            About Us
           </Link>
           <Link href="/meet-the-team" className="text-white/80 hover:text-white transition">
             Meet the Team
@@ -43,7 +46,7 @@ export default function Header() {
         </nav>
 
         {/* RIGHT: REGISTER */}
-        <div className="ml-auto">
+        <div className="ml-auto shrink-0">
           <Link
             href="https://register.agneepath.co.in/"
             className="rounded-full bg-white text-black px-5 py-2 font-medium hover:bg-white/90 transition"
