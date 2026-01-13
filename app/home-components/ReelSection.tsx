@@ -1,12 +1,8 @@
 'use client';
 
-export default function ReelSection({
-  src,
-}: {
-  src: string;
-}) {
+export default function ReelSection({ src }: { src: string }) {
   return (
-    <section className="relative w-full h-[calc(100vh-80px)] overflow-hidden">
+    <section className="w-full h-screen overflow-hidden">
       <video
         autoPlay
         muted

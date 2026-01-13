@@ -19,7 +19,7 @@ export default function Home() {
   <ShadowOverlay />
   <Runner />
 
-  <main className="relative z-20 min-h-screen text-white pt-[80px]">
+  <main className="relative z-20 min-h-screen text-white">
 
     {/* HERO VIDEO */}
     <ReelSection src="/reel.mp4" />
