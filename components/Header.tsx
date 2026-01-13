@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-black border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-[#1f2a44] border-b border-white/10">
+
       <div className="max-w-7xl mx-auto h-20 px-6 flex items-center">
 
         {/* LEFT: LOGO */}
@@ -34,9 +35,12 @@ export default function Header() {
           <Link href="/live-scores" className="text-white/80 hover:text-white transition">
             Live Scores
           </Link>
-          <Link href="/accommodations" className="text-white/80 hover:text-white transition">
-            Accommodation
+
+          {/* CHANGED */}
+          <Link href="/contact-us" className="text-white/80 hover:text-white transition">
+            Contact Us
           </Link>
+
           <Link href="/policy-guidelines" className="text-white/80 hover:text-white transition">
             Policy & Guidelines
           </Link>
