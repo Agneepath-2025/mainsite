@@ -1,6 +1,6 @@
-import Gallery from "@/components/gallery-component"
+import Gallery, { GallerySection } from "@/components/gallery-component"
 
-const gallerySections = [
+const gallerySections: GallerySection[] = [
   {
     images: [
       { src: "/gallery/v2.jpg", alt: "Agneepath event moment" },
@@ -31,8 +31,6 @@ const gallerySections = [
   },
 ]
 
-const GalleryPage = () => {
+export default function GalleryPage() {
   return <Gallery sections={gallerySections} />
 }
-
-export default GalleryPage

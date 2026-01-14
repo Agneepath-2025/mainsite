@@ -6,7 +6,7 @@ export type GalleryImage = {
 }
 
 export type GallerySection = {
-  type?: "grid"
+  type?: "grid" | undefined
   images: GalleryImage[]
 }
 
