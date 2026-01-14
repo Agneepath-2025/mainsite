@@ -33,13 +33,12 @@ export default function PolicyGuidelinesPage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="max-w-6xl mx-auto bg-[#2c355d] rounded-2xl shadow-lg px-10 py-20 text-center"
+          className="max-w-6xl mx-auto bg-[#2c355d] rounded-2xl shadow-lg px-10 pt-10 pb-8 text-center"
         >
           <h2 className="text-3xl font-bold text-white mb-4">
             General Guidelines
           </h2>
 
-          {/* SMALL ORANGE LINE */}
           <div className="h-1 w-16 bg-orange-400 mx-auto mb-8" />
 
           <p className="text-gray-200 text-lg max-w-3xl mx-auto mb-10">
@@ -63,13 +62,12 @@ export default function PolicyGuidelinesPage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.05 }}
-          className="max-w-6xl mx-auto bg-[#2c355d] rounded-2xl shadow-lg px-10 py-20 text-center"
+          className="max-w-6xl mx-auto bg-[#2c355d] rounded-2xl shadow-lg px-10 pt-10 pb-8 text-center"
         >
           <h2 className="text-3xl font-bold text-white mb-4">
             Code of Conduct
           </h2>
 
-          {/* SMALL ORANGE LINE */}
           <div className="h-1 w-16 bg-orange-400 mx-auto mb-8" />
 
           <p className="text-gray-200 text-lg max-w-3xl mx-auto mb-10">
@@ -92,13 +90,12 @@ export default function PolicyGuidelinesPage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="max-w-6xl mx-auto bg-[#2c355d] rounded-2xl shadow-lg px-10 py-20 text-center"
+          className="max-w-6xl mx-auto bg-[#2c355d] rounded-2xl shadow-lg px-10 pt-10 pb-8 text-center"
         >
           <h2 className="text-3xl font-bold text-white mb-4">
             Rulebook
           </h2>
 
-          {/* SMALL ORANGE LINE */}
           <div className="h-1 w-16 bg-orange-400 mx-auto mb-8" />
 
           <p className="text-gray-200 text-lg max-w-3xl mx-auto mb-10">
