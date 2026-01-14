@@ -33,17 +33,16 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-[#FFFDF9]">
       {/* HERO SECTION */}
-      <section className="relative min-h-[45vh] pt-24 md:pt-20 flex items-center bg-[#FFFDF9]">
+      <section className="relative min-h-[35vh] pt-24 md:pt-20 flex items-center bg-[#FFFDF9]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto px-6 text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
-
-            Meet the Team
-          </h1>
+          <h1 className="text-5xl md:text-6xl font-extrabold text-[#242A4A] mb-6 tracking-tight">
+  MEET THE TEAM
+</h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             The passionate individuals behind Ashoka University&apos;s premier sports festival.
@@ -69,9 +68,10 @@ export default function TeamPage() {
               >
                 {/* Vertical Header */}
                 <div className="mb-14 text-center">
-                  <h2 className="text-2xl md:text-3xl font-bold text-[#9A1B1F] mb-2">
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#9A1B1F] mb-3 tracking-tight">
   {vertical.name}
 </h2>
+
                  <p className="text-sm text-[#242A4A]/70 max-w-xl mx-auto">
 
                     {vertical.description}
@@ -96,18 +96,21 @@ export default function TeamPage() {
                     <motion.div key={member.id} variants={item}>
                      <Card
   className="
-    w-[260px]
-    h-[360px]
+    w-[300px]
+    h-[400px]
     bg-[#2C355D]
     border border-white/10
     hover:border-white/40
     transition-all duration-300
     flex flex-col
+    rounded-xl
+    overflow-hidden
   "
 >
 
 
-                        <div className="relative aspect-square bg-[#242A4A] overflow-hidden">
+                       <div className="relative aspect-square bg-[#242A4A] overflow-hidden rounded-t-xl">
+
                           {member.image ? (
                             <Image
                               src={member.image}

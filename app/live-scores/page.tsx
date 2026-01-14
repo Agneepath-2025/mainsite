@@ -14,9 +14,9 @@ export default function LiveScoresPage() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto px-6 text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
-            Live Scores
-          </h1>
+         <h1 className="text-5xl md:text-6xl font-extrabold text-[#242A4A] mb-6 tracking-tight">
+  LIVE SCORES
+</h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             Track real-time scores and updates from all events at Agneepath 7.0.
