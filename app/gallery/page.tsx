@@ -14,10 +14,9 @@ export default function GalleryPage() {
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto px-6 text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
-            Gallery
-          </h1>
-
+          <h1 className="text-5xl md:text-6xl font-extrabold text-[#242A4A] mb-6 tracking-tight">
+  GALLERY
+</h1>
           <p className="text-lg md:text-xl text-gray-600">
             Moments captured from previous Agneepath events.
           </p>

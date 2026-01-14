@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header";
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
+const josefin = Josefin_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -14,25 +22,15 @@ export const metadata: Metadata = {
   description:
     "Official website for Agneepath 7.0, Ashoka University's premier sports festival",
 
-  /* ✅ Favicons (Safari, Chrome, Brave safe) */
   icons: {
     icon: [
       { url: "/favicon/favicon.ico" },
-      {
-        url: "/favicon/favicon-16x16.png",
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        url: "/favicon/favicon-32x32.png",
-        sizes: "32x32",
-        type: "image/png",
-      },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: "/favicon/apple-touch-icon.png",
   },
 
-  /* ✅ WhatsApp / LinkedIn / iMessage preview */
   openGraph: {
     title: "Agneepath 7.0",
     description: "Ashoka University’s premier sports festival",
@@ -49,7 +47,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-  /* ✅ Twitter preview */
   twitter: {
     card: "summary_large_image",
     title: "Agneepath 7.0",
@@ -64,11 +61,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="antialiased bg-white text-black">
+    <html lang="en" className={openSans.variable}>
+      <body className="antialiased bg-white text-black font-sans">
         <Header />
         <main>{children}</main>
       </body>
     </html>
   );
 }
+  
