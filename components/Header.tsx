@@ -35,8 +35,8 @@ export default function Header() {
           </Link>
 
           {/* CHANGED */}
-          <Link href="/contact-us" className="text-white/80 hover:text-white transition">
-            Contact Us
+          <Link href="/accommodation" className="text-white/80 hover:text-white transition">
+            Accommodation
           </Link>
 
           <Link href="/policy-guidelines" className="text-white/80 hover:text-white transition">
@@ -44,6 +44,9 @@ export default function Header() {
           </Link>
           <Link href="/gallery" className="text-white/80 hover:text-white transition">
             Gallery
+          </Link>
+           <Link href="/contact-us" className="text-white/80 hover:text-white transition">
+            Contact Us
           </Link>
         </nav>
 
