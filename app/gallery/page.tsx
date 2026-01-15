@@ -1,60 +1,57 @@
-"use client";
+import Gallery, { GallerySection } from "@/components/gallery-component"
+
+const gallerySections: GallerySection[] = [
+  {
+    images: [
+      { src: "/gallery/v2.jpg", alt: "Agneepath event moment" },
+    ],
+  },
+  {
+    type: "grid",
+    images: [
+      { src: "/gallery/v9.jpg", alt: "Agneepath event moment" },
+      { src: "/gallery/v4.jpg", alt: "Agneepath event moment" },
+      { src: "/gallery/v5.jpg", alt: "Agneepath event moment" },
+      { src: "/gallery/v11.jpg", alt: "Agneepath event moment" },
+    ],
+  },
+  {
+    type: "grid",
+    images: [
+      { src: "/gallery/v7.jpg", alt: "Agneepath event moment" },
+      { src: "/gallery/v6.jpg", alt: "Agneepath event moment" },
+      { src: "/gallery/v10.jpg", alt: "Agneepath event moment" },
+      { src: "/gallery/v12.jpg", alt: "Sunset landscape" },
+    ],
+  },
+  {
+    images: [
+      { src: "/gallery/v14.jpg", alt: "Agneepath event moment" },
+    ],
+  },
+]
 
 export default function GalleryPage() {
   return (
-    <main className="min-h-screen bg-[#242A4A]">
-      {/* HERO */}
-      <section className="pt-32 md:pt-40 pb-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Gallery
-        </h1>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Moments captured from previous Agneepath events.
-        </p>
-      </section>
+    <>
+      <Gallery sections={gallerySections} />
 
-      {/* GALLERY */}
-      <section className="pb-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <div
-            className="
-              grid
-              grid-cols-4
-              grid-rows-3
-              gap-4
-              auto-rows-[180px]
-              md:auto-rows-[200px]
-            "
-          >
-            {/* BIG IMAGE */}
-            <div className="col-span-2 row-span-2 rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Large Image
-            </div>
-
-            {/* RIGHT STACK */}
-            <div className="col-span-2 rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Image
-            </div>
-            <div className="col-span-2 rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Image
-            </div>
-
-            {/* BOTTOM ROW */}
-            <div className="rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Image
-            </div>
-            <div className="rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Image
-            </div>
-            <div className="rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Image
-            </div>
-            <div className="rounded-xl bg-[#2C355D] flex items-center justify-center text-gray-400">
-              Image
-            </div>
-          </div>
+      {/* FOOTER */}
+      <footer className="border-t border-gray-200 bg-[#fefcfb]">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <p className="text-center text-sm text-gray-500">
+            Developed by{" "}
+            <a
+              href="https://github.com/shristi2217"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#242A4A] transition-colors hover:text-[#ff6e1a]"
+            >
+              Shristi Sharma
+            </a>
+          </p>
         </div>
-      </section>
-    </main>
-  );
+      </footer>
+    </>
+  )
 }

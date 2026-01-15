@@ -6,6 +6,9 @@ import { SectionActivationProvider } from './home-components/SectionActivationCo
 import ReelSection from './home-components/ReelSection';
 import EventSection from './home-components/EventSection';
 
+
+
+
 export default function Home() {
   return (
     <SectionActivationProvider>
