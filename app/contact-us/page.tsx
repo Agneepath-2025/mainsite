@@ -126,15 +126,20 @@ export default function AccommodationsPage() {
 
       {/* FOOTER */}
       <footer className="border-t border-gray-200 bg-[#fefcfb]">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <p className="text-center text-sm text-gray-500">
-            Developed by{" "}
-            <span className="font-semibold text-[#242A4A]">
-              Shristi Sharma
-            </span>
-          </p>
-        </div>
-      </footer>
+  <div className="max-w-7xl mx-auto px-6 py-6">
+    <p className="text-center text-sm text-gray-500">
+      Developed by{" "}
+      <a
+        href="https://github.com/shristi2217"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-semibold text-[#242A4A] transition-colors hover:text-[#ff6e1a]"
+      >
+        Shristi Sharma
+      </a>
+    </p>
+  </div>
+</footer>
 
     </main>
   );
