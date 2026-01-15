@@ -22,6 +22,8 @@ export const metadata: Metadata = {
   description:
     "Official website for Agneepath 7.0, Ashoka University's premier sports festival",
 
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+
   icons: {
     icon: [
       { url: "/favicon/favicon.ico" },
