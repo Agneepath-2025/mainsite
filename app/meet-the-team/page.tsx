@@ -157,20 +157,21 @@ export default function TeamPage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 bg-[#FFFDF9]">
-        <div className="max-w-7xl mx-auto px-6 py-6">
-          <p className="text-center text-sm text-gray-500">
-            Developed by{" "}
-            <a
-              href="https://github.com/28nitin07"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-[#242A4A] hover:text-[#FFA543] hover:underline transition-colors"
-            >
-              Nitin S
-            </a>
-          </p>
-        </div>
-      </footer>
+  <div className="max-w-7xl mx-auto px-6 py-6">
+    <p className="text-center text-sm text-gray-500">
+      Developed by{" "}
+      <a
+        href="https://github.com/28nitin07"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-semibold text-[#242A4A] transition-colors hover:text-[#FFA543]"
+      >
+        Nitin S
+      </a>
+    </p>
+  </div>
+</footer>
+
     </div>
   );
 }
