@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --agneepath-orange: #ff6b35;
-  --agneepath-red: #ef4444;
-  --agneepath-yellow: #fbbf24;
-  --agneepath-dark: #1a1a1a;
+  --background: #f3ebe0;
+  --foreground: #242a4a;
+  --agneepath-primary-dark: #242a4a;
+  --agneepath-secondary-dark: #2c355d;
+  --agneepath-accent-red: #9a1b1f;
+  --agneepath-accent-orange: #d74f2a;
+  --agneepath-accent-charcoal: #2f2f2f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-agneepath-orange: var(--agneepath-orange);
-  --color-agneepath-red: var(--agneepath-red);
-  --color-agneepath-yellow: var(--agneepath-yellow);
-  --color-agneepath-dark: var(--agneepath-dark);
+  --color-agneepath-primary-dark: var(--agneepath-primary-dark);
+  --color-agneepath-secondary-dark: var(--agneepath-secondary-dark);
+  --color-agneepath-accent-red: var(--agneepath-accent-red);
+  --color-agneepath-accent-orange: var(--agneepath-accent-orange);
+  --color-agneepath-accent-charcoal: var(--agneepath-accent-charcoal);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -27,8 +29,19 @@
   }
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--foreground);
 }

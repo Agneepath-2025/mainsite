@@ -3,39 +3,57 @@ import React from "react";
 type SportEvent = {
   name: string;
   image: string;
-  color: "orange" | "blue";
+  color: "dark" | "slate" | "orange";
 };
 
-const events: SportEvent[] = [
-  { name: "8 Ball", image: "8-ball.png", color: "orange" },
-  { name: "Badminton", image: "badminton.png", color: "orange" },
-  { name: "Basketball", image: "basketball.png", color: "blue" },
-  { name: "Chess", image: "chess.png", color: "orange" },
-  { name: "Cricket", image: "cricket.png", color: "orange" },
-  { name: "Football", image: "football.png", color: "blue" },
-  { name: "Futsal", image: "futsal.png", color: "orange" },
-  { name: "Shooting", image: "shooting.png", color: "blue" },
-  { name: "Squash", image: "squash.png", color: "orange" },
-  { name: "Snooker", image: "snooker.png", color: "blue" },
-  { name: "Swimming", image: "swimming.png", color: "blue" },
-  { name: "Tennis", image: "tennis.png", color: "orange" },
-  { name: "Volleyball", image: "volleyball.png", color: "blue" },
+const events: SportEvent[] = [  
+  { name: "Squash", image: "squash.png", color: "dark" },
+  { name: "Football", image: "football.png", color: "dark" },
+  { name: "Badminton", image: "badminton.png", color: "dark" },
+  { name: "Basketball", image: "basketball.png", color: "dark" },
+  { name: "Cricket", image: "cricket.png", color: "dark" },
+  { name: "Volleyball", image: "volleyball.png", color: "dark" },
+  { name: "Chess", image: "chess.png", color: "dark" },
+  { name: "Snooker", image: "snooker.png", color: "dark" },
+  { name: "Pool", image: "8-ball.png", color: "dark" },
+  { name: "Shooting", image: "shooting.png", color: "dark" },
+  { name: "Tennis", image: "tennis.png", color: "dark" },
+  { name: "Futsal", image: "futsal.png", color: "dark" },
 ];
 
-const getInvertedBg = (color: "orange" | "blue") =>
-  color === "orange" ? "#2563eb" : "#f97316";
+const getCardBg = (color: "dark" | "slate" | "orange") => {
+  switch(color) {
+    case "dark": return "#242a4a";
+    case "slate": return "#2c355d";
+    case "orange": return "#d74f2a";
+    default: return "#242a4a";
+  }
+};
 
 const EventSection: React.FC = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
+  const [isTablet, setIsTablet] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section style={styles.section}>
-      <h2 style={styles.heading}>Sports Events</h2>
-      <div style={styles.cardContainer}>
+      <div style={isMobile ? styles.cardContainerMobile : isTablet ? styles.cardContainerTablet : styles.cardContainerDesktop}>
         {events.map((event) => (
           <div key={event.name} style={styles.cardWrapper}>
             <div
               style={{
-                ...styles.card,
-                backgroundColor: getInvertedBg(event.color),
+                ...(isMobile ? styles.cardMobile : isTablet ? styles.cardTablet : styles.card),
+                backgroundColor: getCardBg(event.color),
               }}
             >
               <div style={styles.imageContainer}>
@@ -46,7 +64,7 @@ const EventSection: React.FC = () => {
                 />
               </div>
             </div>
-            <p style={styles.cardTitle}>{event.name}</p>
+            <p style={isMobile ? styles.cardTitleMobile : styles.cardTitle}>{event.name}</p>
           </div>
         ))}
       </div>
@@ -56,57 +74,109 @@ const EventSection: React.FC = () => {
 
 const styles: { [key: string]: React.CSSProperties } = {
   section: {
-    padding: "3rem 1.5rem",
-  },
-  heading: {
-    textAlign: "center",
-    fontSize: "2rem",
-    fontWeight: 700,
-    marginBottom: "2.5rem",
-    color: "#fff",
-  },
-  cardContainer: {
+    padding: "1rem",
     display: "flex",
-    flexWrap: "wrap",
     justifyContent: "center",
-    gap: "2.5rem",
-    maxWidth: "1200px",
+    width: "100%",
+    boxSizing: "border-box",
+  },
+  cardContainerDesktop: {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, 240px)",
+    gap: "1.5rem",
+    justifyContent: "center",
+    alignItems: "start",
+  },
+  cardContainerTablet: {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 240px)",
+    gap: "2rem",
+    justifyContent: "center",
+    alignItems: "start",
+  },
+  cardContainerMobile: {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "1rem",
+    justifyContent: "center",
+    alignItems: "center",
+    maxWidth: "280px",
     margin: "0 auto",
-    alignItems: "flex-start",
   },
   cardWrapper: {
     textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   card: {
-    width: "160px",
-    height: "220px",
+    width: "240px",
+    height: "360px",
     borderRadius: "20px",
     overflow: "hidden",
-    boxShadow: "0 16px 35px rgba(0,0,0,0.35)",
+    boxShadow: "0 8px 24px rgba(36, 42, 74, 0.15)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    transition: "all 0.3s ease",
+    backgroundColor: "#242a4a",
+  },
+  cardTablet: {
+    width: "240px",
+    height: "360px",
+    borderRadius: "20px",
+    overflow: "hidden",
+    boxShadow: "0 8px 24px rgba(36, 42, 74, 0.15)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    transition: "all 0.3s ease",
+    backgroundColor: "#242a4a",
+  },
+  cardMobile: {
+    width: "100%",
+    height: "270px",
+    borderRadius: "16px",
+    overflow: "hidden",
+    boxShadow: "0 8px 24px rgba(36, 42, 74, 0.15)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    transition: "all 0.3s ease",
+    backgroundColor: "#242a4a",
   },
   imageContainer: {
     width: "100%",
     height: "100%",
     overflow: "hidden",
-    lineHeight: 0, // remove any inline spacing
+    lineHeight: 0,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#242a4a",
   },
   image: {
     width: "100%",
     height: "100%",
     objectFit: "contain",
-    objectPosition: "center top", // crop top blank space
+    objectPosition: "center",
     display: "block",
-    verticalAlign: "top",
-    transform: "scale(1.05)", // tiny scale to remove side gaps
+    verticalAlign: "middle",
+    transform: "scale(1.08)",
   },
   cardTitle: {
-    marginTop: "1rem",
-    fontSize: "1.1rem",
+    marginTop: "0.75rem",
+    fontSize: "1rem",
     fontWeight: 600,
-    color: "#fff",
+    color: "#242a4a",
+    letterSpacing: "0.3px",
+  },
+  cardTitleMobile: {
+    marginTop: "0.5rem",
+    fontSize: "0.75rem",
+    fontWeight: 600,
+    color: "#242a4a",
+    letterSpacing: "0.3px",
   },
 };
 
