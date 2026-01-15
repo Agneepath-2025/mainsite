@@ -13,7 +13,7 @@ export default function Home() {
       <div className="fixed inset-0 z-0" style={{ backgroundColor: '#f3ebe0' }} />
       
 
-      <main className="relative z-20 min-h-screen overflow-auto pt-[96px]">
+      <main className="relative z-20 min-h-screen overflow-auto pt-20 md:pt-[96px]">
         {/* Hero Reel Section */}
         <div className="relative h-screen flex items-center justify-center w-full">
           <ReelSection src="/reel.mp4" shrinkRange={600} />
