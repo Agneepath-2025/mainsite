@@ -19,7 +19,7 @@ export default function Home() {
       <main className="relative z-20 min-h-screen overflow-auto pt-20 md:pt-[96px]">
         {/* Hero Reel Section */}
         <div className="relative h-screen flex items-center justify-center w-full">
-          <ReelSection src="/reel.mp4" shrinkRange={600} />
+          <ReelSection src="/reel.mp4" />
         </div>
 
         {/* About Us Section */}
