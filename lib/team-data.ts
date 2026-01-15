@@ -85,7 +85,7 @@ export const teamMembers: TeamMember[] = [
     name: "Diya Sandhir",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/Diya Sandhir.jpeg"
+    image: "/team/diya-sandhir.jpeg"
   },
   {
     id: "4",
@@ -95,18 +95,18 @@ export const teamMembers: TeamMember[] = [
     image: "/team/antara-malhotra.jpeg"
   },
   {
-    id: "5",
-    name: "Soham Mishra",
-    role: "Deputy Fest Secretary",
-    vertical: "Deputy Fest Secretaries",
-    image: "/team/SohamMishra.JPG"
-  },
+  id: "soham-mishra",
+  name: "Soham Mishra",
+  role: "Deputy Fest Secretary",
+  vertical: "Deputy Fest Secretaries",
+  image: "/team/soham-mishra.jpg",
+},
   {
     id: "6",
     name: "Kunal Bansal",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/KunalBansal.jpeg"
+    image: "/team/kunal-bansal.jpeg"
   },
   
   // Sponsorships & Headliners
@@ -142,10 +142,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "11",
-    name: "Meesala Varsha",
+    name: "Varsha Meesala",
     role: "Finance",
     vertical: "Finance",
-    image: "/team/meesala-varsha.jpg"
+    image: "/team/varsha-meesala.jpeg"
   },
   {
     id: "12",
@@ -172,12 +172,12 @@ export const teamMembers: TeamMember[] = [
     image: "/team/avani-goel.jpg"
   },
   {
-    id: "15",
-    name: "Khushi Sethi",
-    role: "Social Media, Design & Marketing",
-    vertical: "Social Media, Design & Marketing",
-    image: "/team/khushi-sethi.jpg"
-  },
+  id: "15",
+  name: "Khushi Sethi",
+  role: "Social Media, Design & Marketing",
+  vertical: "Social Media, Design & Marketing",
+  image: "/team/khushi-sethi.jpg",
+},
   {
     id: "16",
     name: "Lakshya Kapoor",
@@ -192,21 +192,21 @@ export const teamMembers: TeamMember[] = [
     name: "Siddharth Bhatnagar",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/siddharth-bhatnagar.JPG"
+    image: "/team/siddharth-bhatnagar.jpg"
   },
   {
     id: "18",
     name: "Parth Agarwal",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/parth agarwal.jpg"
+    image: "/team/parth-agarwal.jpg"
   },
   {
     id: "19",
     name: "Akshitha Ashok",
     role: "Events and Logistics",
     vertical: "Events and Logistics",
-    image: "/team/akshitha ashok.jpg"
+    image: "/team/akshitha-ashok.jpg"
   },
   {
     id: "20",
@@ -222,14 +222,14 @@ export const teamMembers: TeamMember[] = [
     name: "Manoj N",
     role: "Safety and Security",
     vertical: "Safety and Security",
-    image: "/team/manoj-n.jpg"
+    image: "/team/manoj.jpeg"
   },
   {
     id: "22",
     name: "Muhammed Razin",
     role: "Safety and Security",
     vertical: "Safety and Security",
-    image: "/team/muhammed-razin.jpg"
+    image: "/team/razin.jpg"
   },
   {
     id: "23",
@@ -245,7 +245,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vidishaa Mundhra ",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
-    image: "/team/vidishaa-mundhra.jpg"
+    image: "/team/vidishaa-mundhra.jpeg"
   },
   {
     id: "25",
@@ -259,7 +259,7 @@ export const teamMembers: TeamMember[] = [
     name: "Nishka Desai",
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
-    image: "/team/nishka-desai.jpg"
+    image: "/team/Nishka-Desai.jpeg"
   },
   
   // Travel & Hospitality
@@ -282,7 +282,7 @@ export const teamMembers: TeamMember[] = [
     name: "Anshul Tekriwal",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
-    image: "/team/anshul-tekriwal.jpg"
+    image: "/team/anshul.tekriwal.jpg"
   },
   
   // Decor and Ceremonies
@@ -307,7 +307,7 @@ export const teamMembers: TeamMember[] = [
     name: "Manya Kapoor",
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
-    image: "/team/manyakapoor.jpg"
+    image: "/team/manya-kapoor.jpg"
   },
   {
     id: "33",
@@ -323,14 +323,14 @@ export const teamMembers: TeamMember[] = [
     name: "Nitin S",
     role: "Tech",
     vertical: "Tech",
-    image: "/team/nitin-s.jpg"
+    image: "/team/nitin-s.png"
   },
   {
     id: "35",
     name: "Parshwa Doshi",
     role: "Tech",
     vertical: "Tech",
-    image: "/team/parshwa-doshi.jpg"
+    image: "/team/parshwa-doshi.jpeg"
   },
   {
     id: "36",
