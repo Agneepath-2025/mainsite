@@ -15,7 +15,7 @@ type Venue = {
 const venues: Venue[] = [
   {
     id: 1,
-    name: "Sunken Feild",
+    name: "Sunken Field",
     sports: ["Futsal"],
     dates: "1 Feb 2026",
     top: "55%",
@@ -24,14 +24,14 @@ const venues: Venue[] = [
   {
     id: 2,
     name: "Sports MPH",
-    sports: ["Chess - Agneepath Room", "Pool - Pool Room", "Snooker - Pool Room", "Squash - Squash court", "Shooting - Shooting range", "Badminton - Badminton Court", "Table Tennis - Table Tennis Room"],
+    sports: ["Chess - Agneepath Room", "Pool - Pool Room", "Snooker - Pool Room", "Squash - Squash Court", "Shooting - Shooting Range", "Badminton - Sports MPH", "Table Tennis - Table Tennis Room"],
     dates: "31 Jan 2026",
     top: "40%",
     left: "70%",
   },
   {
     id: 3,
-    name: "Football Feild",
+    name: "Football Field",
     sports: ["Football"],
     dates: "31 Jan 2026",
     top: "25%",
@@ -55,7 +55,7 @@ const venues: Venue[] = [
   },
   {
     id: 6,
-    name: "Cricket Court",
+    name: "Cricket Field",
     sports: ["Cricket"],
     dates: "31 Jan 2026",
     top: "22%",
@@ -104,6 +104,7 @@ export default function CampusMap() {
               className="
                 absolute left-6 top-1/2 -translate-y-1/2
                 min-w-[220px]
+            
                 rounded-xl
                 bg-white/70
                 backdrop-blur-xl
@@ -116,7 +117,7 @@ export default function CampusMap() {
               <div
                 className="
                   absolute -left-2 top-1/2 -translate-y-1/2
-                  w-4 h-4
+                  w-6 h-4
                   bg-white/70
                   rotate-45
                   border-l border-b border-white/40
