@@ -25,7 +25,7 @@ export default function ShadowOverlay() {
         background:
           `radial-gradient(circle at 80px ${y}px, rgba(255 255 255 / 0.15) 0%, transparent 240px),
            radial-gradient(circle at calc(100% - 80px) ${y}px, rgba(255 255 255 / 0.15) 0%, transparent 240px),
-           radial-gradient(circle at 50% 80vh, rgba(0 0 0 / 0.55) 0%, rgba(0 0 0 / 0.85) 90%)`,
+           radial-gradient(circle at 50% 80vh, rgba(36 42 74 / 0.55) 0%, rgba(20 24 44 / 0.9) 90%)`,
       }}
     />
   );

@@ -21,9 +21,7 @@ export default function SwimmingPoolBackground() {
   return (
     <div className="absolute inset-0">
       {/* Base pool colors */}
-      <div className="absolute inset-0 bg-blue-700" />
-      <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,#2f93c7,#2f93c7_24px,#4fc3f7_24px,#4fc3f7_48px)]" />
-      <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,#2f93c7,#2f93c7_24px,#4fc3f7_24px,#4fc3f7_48px)]" />
+      <div className="absolute inset-0 bg-#242A4A" />
 
       {/* Floodlights (white blurred glow) */}
       <div

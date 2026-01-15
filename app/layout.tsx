@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description:
     "Official website for Agneepath 7.0, Ashoka University's premier sports festival",
 
+  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+
   /* ✅ Favicons (Safari, Chrome, Brave safe) */
   icons: {
     icon: [
@@ -65,7 +67,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="antialiased bg-white text-black">
+      <body className="antialiased bg-background text-foreground">
         <Header />
         <main>{children}</main>
       </body>
