@@ -100,7 +100,7 @@ export default function Home() {
                   Location
                 </h3>
                 <div className="text-gray-300 text-xs md:text-sm leading-relaxed">
-                  <p className="font-semibold mb-1">Ashoka University</p>
+                  <p className="font-semibold mb-2">Ashoka University</p>
                   <p>Plot No. 2, Rajiv Gandhi Education City</p>
                   <p>P.O. Rai, Sonepat</p>
                   <p>Haryana - 131029 (India)</p>
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
 
               {/* Social Icons */}
-              <div className="flex justify-center md:justify-end gap-6">
+              <div className="flex justify-center md:justify-end gap-4 sm:justify-start md:justify-end pt-2 sm:pt-0 sm:col-span-2 md:col-span-1">
                 <a 
                   href="mailto:contact@agneepath.com" 
                   className="inline-flex items-center justify-center w-10 h-10 rounded-full hover:bg-opacity-20 hover:bg-orange-500 transition duration-300"
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
 
             {/* Copyright */}
-            <div className="text-center text-gray-500 text-xs border-t border-gray-700 mt-4 pt-3">
+            <div className="text-center text-gray-500 text-xs border-t border-gray-700 mt-6 sm:mt-8 pt-4 sm:pt-5">
               <p>&copy; {new Date().getFullYear()} Agneepath. All rights reserved.</p>
             </div>
           </div>
