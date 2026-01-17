@@ -25,6 +25,7 @@ export default function Header() {
     { href: "/accommodations", label: "Accommodation" },
     { href: "/policy-guidelines", label: "Policy & Guidelines" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/contact-us", label: "Contact Us" },
   ];
 
   return (
@@ -61,7 +62,7 @@ export default function Header() {
         )}
 
         {/* RIGHT: REGISTER + Mobile Menu Button */}
-        <div className="flex items-center gap-4 ml-auto md:ml-0">
+        <div className="flex items-center gap-8 ml-auto md:ml-18">
           {/* Desktop Register Button */}
           {!isMobile && (
             <Link

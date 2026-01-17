@@ -41,7 +41,7 @@ export default function TeamPage() {
           className="max-w-3xl mx-auto px-6 text-center"
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-[#242A4A] mb-6 tracking-tight">
-  MEET THE TEAM
+  Meet the team
 </h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
