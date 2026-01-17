@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import AboutUsSection from './home-components/about-us';
 import CampusMap from './home-components/CampusMap';
 import { SectionActivationProvider } from './home-components/SectionActivationContext';
@@ -16,11 +17,9 @@ export default function Home() {
       <div className="fixed inset-0 z-0" style={{ backgroundColor: '#f3ebe0' }} />
       
 
-      <main className="relative z-20 min-h-screen overflow-auto pt-20 md:pt-[96px]">
+      <main className="relative z-20 min-h-screen overflow-auto">
         {/* Hero Reel Section */}
-        <div className="relative h-screen flex items-center justify-center w-full">
-          <ReelSection src="/reel.mp4" />
-        </div>
+        <ReelSection src="/reel.mp4" shrinkRange={600} />
 
         {/* About Us Section */}
         <section className="w-full py-8 md:py-12">
@@ -32,7 +31,7 @@ export default function Home() {
         {/* Events Section */}
         <section className="w-full py-12 md:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center" style={{ color: '#242a4a' }}>
+            <h2 className="text-4xl sm:text-6xl font-bold mb-8 sm:mb-12 text-center" style={{ color: '#242a4a' }}>
               Sports Events
             </h2>
             <EventSection />
@@ -40,9 +39,9 @@ export default function Home() {
         </section>
 
         {/* Campus Map Section */}
-        <section className="w-full py-16 md:py-24" style={{ backgroundColor: '#1a2a5e' }}>
+        <section className="w-full py-8 md:py-12" style={{ backgroundColor: '#1a2a5e' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center" style={{ color: '#ffffff' }}>
+            <h2 className="text-4xl sm:text-6xl font-bold mb-8 sm:mb-12 text-center" style={{ color: '#ffffff' }}>
               Campus Map
             </h2>
             <div>
@@ -54,7 +53,7 @@ export default function Home() {
         {/* Contact & Footer Section */}
         <section className="w-full bg-gray-900 text-white py-6 md:py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-center" style={{ color: '#ffffff' }}>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center" style={{ color: '#ffffff' }}>
               Get in Touch
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
@@ -65,9 +64,9 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-1 text-xs md:text-sm">
                   <li>
-                    <a href="/" className="text-gray-300 hover:text-white transition">
+                    <Link href="/" className="text-gray-300 hover:text-white transition">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="/accommodations" className="text-gray-300 hover:text-white transition">

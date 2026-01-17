@@ -1,4 +1,5 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export type GalleryImage = {
   src: string
@@ -34,12 +35,15 @@ const Gallery = ({ sections }: { sections: GallerySection[] }) => {
               )}
             >
               {section.images.map((image, imageIndex) => (
-                <img
-                  key={imageIndex}
-                  src={image.src}
-                  alt={image.alt}
-                  className="h-full w-full rounded-lg object-cover"
-                />
+                <div key={imageIndex} className="relative h-64 w-full">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="rounded-lg object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
               ))}
             </div>
           ))}

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type SportEvent = {
   name: string;
@@ -57,10 +58,12 @@ const EventSection: React.FC = () => {
               }}
             >
               <div style={styles.imageContainer}>
-                <img
+                <Image
                   src={`/images/${event.image}`}
                   alt={event.name}
+                  fill
                   style={styles.image}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>
@@ -146,6 +149,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: "#242a4a",
   },
   imageContainer: {
+    position: "relative" as const,
     width: "100%",
     height: "100%",
     overflow: "hidden",
