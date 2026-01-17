@@ -15,27 +15,27 @@ type Venue = {
 const venues: Venue[] = [
   {
     id: 1,
-    name: "Sunken Field",
-    sports: ["Futsal"],
+    name: "Outdoor Field",
+    sports: ["Futsal - Sunken Field", "Volleyball - Volleyball Field", "Basketball - Basketball Court"],
     dates: "1 Feb 2026",
-    top: "55%",
-    left: "37%",
+    top: "43%",
+    left: "32%",
   },
   {
     id: 2,
     name: "Sports MPH",
-    sports: ["Chess - Agneepath Room", "Pool - Pool Room", "Snooker - Pool Room", "Squash - Squash Court", "Shooting - Shooting Range", "Badminton - Sports MPH", "Table Tennis - Table Tennis Room"],
+    sports: ["Chess - Agneepath Room", "Pool - Pool Room", "Snooker - Pool Room", "Squash - Squash Court", "Shooting - Shooting Range", "Badminton - Sports MPH", "Table Tennis - Table Tennis Room", "Basketball - Basketball Court"],
     dates: "31 Jan 2026",
-    top: "40%",
-    left: "70%",
+    top: "60%",
+    left: "71%",
   },
   {
     id: 3,
     name: "Football Field",
-    sports: ["Football"],
+    sports: ["Football", "Cricket"],
     dates: "31 Jan 2026",
-    top: "25%",
-    left: "60%",
+    top: "31%",
+    left: "65%",
   },
   {
     id: 4,
@@ -44,22 +44,6 @@ const venues: Venue[] = [
     dates: "31 Jan 2026",
     top: "35%",
     left: "17%",
-  },
-  {
-    id: 5,
-    name: "Sports Court",
-    sports: ["Basketball", "Volleyball"],
-    dates: "31 Jan 2026",
-    top: "55%",
-    left: "70%",
-  },
-  {
-    id: 6,
-    name: "Cricket Field",
-    sports: ["Cricket"],
-    dates: "31 Jan 2026",
-    top: "22%",
-    left: "65%",
   },
 ];
 
@@ -103,8 +87,7 @@ export default function CampusMap() {
             <div
               className="
                 absolute left-6 top-1/2 -translate-y-1/2
-                min-w-[220px]
-            
+                min-w-[220px]            
                 rounded-xl
                 bg-white/70
                 backdrop-blur-xl

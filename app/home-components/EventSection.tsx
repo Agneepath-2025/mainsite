@@ -7,18 +7,18 @@ type SportEvent = {
 };
 
 const events: SportEvent[] = [  
-  { name: "Squash", image: "squash.png", color: "dark" },
-  { name: "Football", image: "football.png", color: "dark" },
-  { name: "Badminton", image: "badminton.png", color: "dark" },
-  { name: "Basketball", image: "basketball.png", color: "dark" },
-  { name: "Cricket", image: "cricket.png", color: "dark" },
-  { name: "Volleyball", image: "volleyball.png", color: "dark" },
-  { name: "Chess", image: "chess.png", color: "dark" },
-  { name: "Snooker", image: "snooker.png", color: "dark" },
-  { name: "Pool", image: "8-ball.png", color: "dark" },
-  { name: "Shooting", image: "shooting.png", color: "dark" },
-  { name: "Tennis", image: "tennis.png", color: "dark" },
-  { name: "Futsal", image: "futsal.png", color: "dark" },
+  { name: "Squash", image: "squash.PNG", color: "dark" },
+  { name: "Football", image: "football.PNG", color: "dark" },
+  { name: "Badminton", image: "badminton.PNG", color: "dark" },
+  { name: "Basketball", image: "basketball.PNG", color: "dark" },
+  { name: "Cricket", image: "cricket.PNG", color: "dark" },
+  { name: "Volleyball", image: "volleyball.PNG", color: "dark" },
+  { name: "Chess", image: "chess.PNG", color: "dark" },
+  { name: "Snooker", image: "snooker.PNG", color: "dark" },
+  { name: "Pool", image: "8-ball.PNG", color: "dark" },
+  { name: "Shooting", image: "shooting.PNG", color: "dark" },
+  { name: "Tennis", image: "tennis.PNG", color: "dark" },
+  { name: "Futsal", image: "futsal.PNG", color: "dark" },
 ];
 
 const getCardBg = (color: "dark" | "slate" | "orange") => {
