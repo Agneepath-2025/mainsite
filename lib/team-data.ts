@@ -272,10 +272,10 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "28",
-    name: "",
+    name: "Mahtab Kaur",
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
-    image: "/team/minal-priya.jpg"
+    image: "/team/mahtab-kaur.jpg"
   },
   {
     id: "29",
@@ -283,6 +283,13 @@ export const teamMembers: TeamMember[] = [
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/anshul.tekriwal.jpg"
+  },
+  {
+    id: "38",
+    name: "Minal Priya",
+    role: "Travel & Hospitality",
+    vertical: "Travel & Hospitality",
+    image: "/team/minal-priya.jpg"
   },
   
   // Decor and Ceremonies
