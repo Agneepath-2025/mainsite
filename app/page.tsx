@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import AboutUsSection from './home-components/about-us';
 import CampusMap from './home-components/CampusMap';
 import { SectionActivationProvider } from './home-components/SectionActivationContext';
@@ -63,9 +64,9 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-1 text-xs md:text-sm">
                   <li>
-                    <a href="/" className="text-gray-300 hover:text-white transition">
+                    <Link href="/" className="text-gray-300 hover:text-white transition">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="/accommodations" className="text-gray-300 hover:text-white transition">

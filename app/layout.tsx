@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header";
-import { Josefin_Sans } from "next/font/google";
 import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-open-sans",
-  display: "swap",
-});
-
-const josefin = Josefin_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
