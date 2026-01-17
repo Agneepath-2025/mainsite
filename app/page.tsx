@@ -32,7 +32,7 @@ export default function Home() {
         <section className="w-full py-12 md:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <h2 className="text-4xl sm:text-6xl font-bold mb-8 sm:mb-12 text-center" style={{ color: '#242a4a' }}>
-              Sports Events
+              SPORT EVENTS
             </h2>
             <EventSection />
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
         <section className="w-full py-8 md:py-12" style={{ backgroundColor: '#1a2a5e' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <h2 className="text-4xl sm:text-6xl font-bold mb-8 sm:mb-12 text-center" style={{ color: '#ffffff' }}>
-              Campus Map
+              CAMPUS MAP
             </h2>
             <div>
               <CampusMap />

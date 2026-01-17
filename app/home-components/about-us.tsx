@@ -20,11 +20,11 @@ export default function AboutUsSection() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="text-4xl sm:text-6xl font-bold mb-8 sm:mb-12" style={{ color: '#242a4a' }}>
-          About Agneepath
+          ABOUT AGNEEPATH
         </h2>
 
-        <p className="text-2xl sm:text-3xl leading-relaxed mb-6 sm:mb-8" style={{ color: '#2c355d' }}>
-          Agneepath is not just a sports fest — it is a journey.
+        <p className="text-xl sm:text-2xl leading-relaxed" style={{ color: '#2f2f2f' }}>
+          Agneepath is not just a sports fest, it is a journey.
           Inspired by the Olympic flame, it represents resilience,
           unity, and the relentless pursuit of excellence.
         </p>
