@@ -43,7 +43,7 @@ const venues: Venue[] = [
     sports: ["Tennis"],
     dates: "31 Jan 2026",
     top: "35%",
-    left: "17%",
+    left: "17%"
   },
 ];
 
