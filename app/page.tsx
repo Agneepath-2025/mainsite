@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import AboutUsSection from './home-components/about-us';
 import CampusMap from './home-components/CampusMap';
 import { SectionActivationProvider } from './home-components/SectionActivationContext';
@@ -19,7 +18,7 @@ export default function Home() {
 
       <main className="relative z-20 min-h-screen overflow-auto">
         {/* Hero Reel Section */}
-        <ReelSection src="/reel.mp4" shrinkRange={600} />
+        <ReelSection src="/reel.MP4" shrinkRange={600} />
 
         {/* About Us Section */}
         <section className="w-full py-8 md:py-12">
@@ -64,9 +63,9 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-1 text-xs md:text-sm">
                   <li>
-                    <Link href="/" className="text-gray-300 hover:text-white transition">
+                    <a href="/" className="text-gray-300 hover:text-white transition">
                       Home
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <a href="/accommodations" className="text-gray-300 hover:text-white transition">
