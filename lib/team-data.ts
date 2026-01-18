@@ -57,7 +57,7 @@ export const teamMembers: TeamMember[] = [
     vertical: "Deputy Fest Secretaries",
     image: "/team/diya-sandhir.jpeg",
     imageScale: "scale-100",
-    imagePosition: "object-[50%_70%]",
+    imagePosition: "object-[50%_50%]"
   },
   {
     id: "4",
@@ -65,13 +65,17 @@ export const teamMembers: TeamMember[] = [
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
     image: "/team/antara-malhotra.jpeg",
+    imageScale: "scale-100",
+    imagePosition: "object-[50%_45%]"
   },
   {
     id: "soham-mishra",
     name: "Soham Mishra",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/soham-mishra.jpg",
+    image: "/team/soham-mishra .jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[0%_80%]",
   },
   {
     id: "6",
@@ -79,6 +83,8 @@ export const teamMembers: TeamMember[] = [
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
     image: "/team/kunal-bansal.jpeg",
+     imageScale: "scale-100",
+    imagePosition: "object-[200%_100%]",
   },
 
   {
@@ -87,6 +93,8 @@ export const teamMembers: TeamMember[] = [
     role: "Sponsorships & Headliners",
     vertical: "Sponsorships & Headliners",
     image: "/team/ambika-mishra.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[0%_20%]",
   },
   {
     id: "8",
@@ -94,6 +102,8 @@ export const teamMembers: TeamMember[] = [
     role: "Sponsorships & Headliners",
     vertical: "Sponsorships & Headliners",
     image: "/team/rida-khan.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[20%_50%]",
   },
   {
     id: "9",
@@ -101,6 +111,9 @@ export const teamMembers: TeamMember[] = [
     role: "Sponsorships & Headliners",
     vertical: "Sponsorships & Headliners",
     image: "/team/kartik-khandelwal.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[10%_20%]",
+  
   },
 
   {
@@ -109,6 +122,8 @@ export const teamMembers: TeamMember[] = [
     role: "Finance",
     vertical: "Finance",
     image: "/team/arshiya-goyal.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[20%_50%]",
   },
   {
     id: "11",
@@ -116,6 +131,8 @@ export const teamMembers: TeamMember[] = [
     role: "Finance",
     vertical: "Finance",
     image: "/team/varsha-meesala.jpeg",
+    imageScale: "scale-100",
+    imagePosition: "object-[40%_85%]",
   },
   {
     id: "12",
@@ -123,6 +140,8 @@ export const teamMembers: TeamMember[] = [
     role: "Finance",
     vertical: "Finance",
     image: "/team/maehar-parkar.jpg",
+    imageScale: "scale-120",
+    imagePosition: "object-[105%_100%]",
   },
 
   {
@@ -131,6 +150,8 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/tejasvini-yadav.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[60%_20%]",
   },
   {
     id: "14",
@@ -138,6 +159,9 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/avani-goel.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[10%_70%]",
+
   },
   {
     id: "15",
@@ -145,6 +169,8 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/khushi-sethi.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[50%_90%]",
   },
   {
     id: "16",
@@ -152,6 +178,8 @@ export const teamMembers: TeamMember[] = [
     role: "Social Media, Design & Marketing",
     vertical: "Social Media, Design & Marketing",
     image: "/team/lakshya-kapoor.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[30%_30%]",
   },
 
   {
@@ -160,6 +188,8 @@ export const teamMembers: TeamMember[] = [
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/siddharth-bhatnagar.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[30%_30%]",
   },
   {
     id: "18",
@@ -167,6 +197,8 @@ export const teamMembers: TeamMember[] = [
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/parth-agarwal.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[30%_30%]",
   },
   {
     id: "19",
@@ -174,6 +206,8 @@ export const teamMembers: TeamMember[] = [
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/akshitha-ashok.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[30%_30%]",
   },
   {
     id: "20",
@@ -181,6 +215,8 @@ export const teamMembers: TeamMember[] = [
     role: "Events and Logistics",
     vertical: "Events and Logistics",
     image: "/team/sanaya-mehta.jpg",
+     imageScale: "scale-160",
+    imagePosition: "object-[10%_50%]",
   },
 
   {
@@ -189,6 +225,8 @@ export const teamMembers: TeamMember[] = [
     role: "Safety and Security",
     vertical: "Safety and Security",
     image: "/team/manoj.jpeg",
+     imageScale: "scale-150",
+    imagePosition: "object-[40%_80%]",
   },
   {
     id: "22",
@@ -196,6 +234,8 @@ export const teamMembers: TeamMember[] = [
     role: "Safety and Security",
     vertical: "Safety and Security",
     image: "/team/razin.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[30%_60%]",
   },
   {
     id: "23",
@@ -203,6 +243,8 @@ export const teamMembers: TeamMember[] = [
     role: "Safety and Security",
     vertical: "Safety and Security",
     image: "/team/veda-samhita.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[0%_10%]",
   },
 
   {
@@ -211,6 +253,8 @@ export const teamMembers: TeamMember[] = [
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
     image: "/team/vidishaa-mundhra.jpeg",
+    imageScale: "scale-100",
+    imagePosition: "object-[50%_60%]",
   },
   {
     id: "25",
@@ -218,6 +262,8 @@ export const teamMembers: TeamMember[] = [
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
     image: "/team/jiya-vaya.jpg",
+     imageScale: "scale-120",
+    imagePosition: "object-[80%_80%]",
   },
   {
     id: "26",
@@ -225,6 +271,8 @@ export const teamMembers: TeamMember[] = [
     role: "Outreach & Registration Desk",
     vertical: "Outreach & Registration Desk",
     image: "/team/Nishka-Desai.jpeg",
+     imageScale: "scale-100",
+    imagePosition: "object-[30%_80%]",
   },
 
   {
@@ -233,6 +281,8 @@ export const teamMembers: TeamMember[] = [
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/gia-doshi.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[30%_40%]",
   },
   {
     id: "28",
@@ -240,6 +290,8 @@ export const teamMembers: TeamMember[] = [
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/mahtab-kaur.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[30%_60%]",
   },
   {
     id: "29",
@@ -247,6 +299,8 @@ export const teamMembers: TeamMember[] = [
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/anshul.tekriwal.jpg",
+    imageScale: "scale-200",
+    imagePosition: "object-[50%_100%]",
   },
   {
     id: "38",
@@ -254,6 +308,8 @@ export const teamMembers: TeamMember[] = [
     role: "Travel & Hospitality",
     vertical: "Travel & Hospitality",
     image: "/team/minal-priya.jpg",
+     imageScale: "scale-100",
+    imagePosition: "object-[20%_20%]",
   },
 
   {
@@ -262,6 +318,8 @@ export const teamMembers: TeamMember[] = [
     role: "Decor and Ceremonies",
     vertical: "Decor and Ceremonies",
     image: "/team/rajita-rai.jpg",
+    imageScale: "scale-130",
+    imagePosition: "object-[20%_60%]",
   },
   {
     id: "31",
@@ -269,6 +327,8 @@ export const teamMembers: TeamMember[] = [
     role: "Decor and Ceremonies",
     vertical: "Decor and Ceremonies",
     image: "/team/aadya-saxena.jpg",
+    imageScale: "scale-100",
+    imagePosition: "object-[10%_0%]",
   },
 
   {
@@ -277,6 +337,8 @@ export const teamMembers: TeamMember[] = [
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
     image: "/team/manya-kapoor.jpg",
+    imageScale: "scale-110",
+    imagePosition: "object-[10%_60%]",
   },
   {
     id: "33",
@@ -284,6 +346,8 @@ export const teamMembers: TeamMember[] = [
     role: "HR, Legal and Documentation",
     vertical: "HR, Legal and Documentation",
     image: "/team/anshikasarraf.jpg",
+    imageScale: "scale-120",
+    imagePosition: "object-[10%_60%]",
   },
 
   {
@@ -292,6 +356,8 @@ export const teamMembers: TeamMember[] = [
     role: "Tech",
     vertical: "Tech",
     image: "/team/nitin-s.png",
+     imageScale: "scale-130",
+    imagePosition: "object-[30%_100%]",
   },
   {
     id: "35",
@@ -299,7 +365,10 @@ export const teamMembers: TeamMember[] = [
     role: "Tech",
     vertical: "Tech",
     image: "/team/parshwa-doshi.jpeg",
+    imageScale: "scale-100",
+    imagePosition: "object-[20%_20%]",
   },
+
   {
     id: "36",
     name: "Hriday Koppikar",
@@ -313,5 +382,7 @@ export const teamMembers: TeamMember[] = [
     role: "Tech",
     vertical: "Tech",
     image: "/team/shristi-sharma.jpg",
+    imageScale: "scale-110",
+    imagePosition: "object-[20%_20%]",
   },
 ];
