@@ -22,7 +22,11 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/meet-the-team", label: "Meet the Team" },
     { href: "/live-scores", label: "Live Scores" },
-    { href: "/accommodation", label: "Accommodation" },
+    {
+      href: "https://docs.google.com/spreadsheets/d/1g4IkiOpeFkf-dH0b8FSKZ1uDoicRNHV5rVANyc8ZyYY",
+      label: "Accommodation",
+      external: true,
+    },
     { href: "/policy-guidelines", label: "Policy & Guidelines" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact-us", label: "Contact Us" },
@@ -30,8 +34,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 p-4" style={{ backgroundColor: '#2C355D' }}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between md:justify-start">
-        {/* LEFT: LOGO */}
+      <div className="max-w-7.5xl mx-auto flex items-center justify-between md:justify-start">
+        {/* LOGO */}
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <Image
             src="/logo-final.png"
@@ -45,25 +49,37 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* MIDDLE: PAGES - Desktop only - Always visible on md and up */}
+        {/* DESKTOP NAV */}
         {!isMobile && (
-          <nav className="flex items-center gap-8 ml-32">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-base transition hover:text-orange-400"
-                style={{ color: '#F3EBE0' }}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <nav className="flex items-center gap-10 ml-32">
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base transition hover:text-orange-400"
+                  style={{ color: '#F3EBE0' }}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-base transition hover:text-orange-400"
+                  style={{ color: '#F3EBE0' }}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </nav>
         )}
 
-        {/* RIGHT: REGISTER + Mobile Menu Button */}
-        <div className="flex items-center gap-8 ml-auto md:ml-18">
-          {/* Desktop Register Button */}
+        {/* RIGHT SIDE */}
+        <div className="flex items-center gap-25 ml-auto md:ml-35">
           {!isMobile && (
             <Link
               href="https://register.agneepath.co.in/"
@@ -73,7 +89,6 @@ export default function Header() {
             </Link>
           )}
 
-          {/* Mobile Menu Button - Only on mobile */}
           {isMobile && (
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -100,21 +115,36 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu - Only on mobile */}
+      {/* MOBILE MENU */}
       {isMobile && isMenuOpen && (
         <div className="border-t border-gray-700" style={{ backgroundColor: '#2C355D' }}>
           <nav className="px-4 py-2 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block text-sm py-2 px-3 hover:bg-gray-700 hover:text-orange-400 rounded-md transition"
-                style={{ color: '#F3EBE0' }}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-sm py-2 px-3 hover:bg-gray-700 hover:text-orange-400 rounded-md transition"
+                  style={{ color: '#F3EBE0' }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block text-sm py-2 px-3 hover:bg-gray-700 hover:text-orange-400 rounded-md transition"
+                  style={{ color: '#F3EBE0' }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+
             <Link
               href="https://register.agneepath.co.in/"
               className="block bg-orange-500 hover:bg-orange-600 text-white text-sm px-3 py-2 rounded-full font-medium text-center transition mt-2"

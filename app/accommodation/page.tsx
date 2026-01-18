@@ -77,7 +77,7 @@ export default function AccommodationsPage() {
               transition
             "
           >
-            Open Allotment Sheet
+            Open Accommodation Sheet
           </a>
         </motion.div>
       </section>
