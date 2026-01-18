@@ -69,14 +69,18 @@ export const teamMembers: TeamMember[] = [
     name: "Bhavya Sood",
     role: "Fest Secretary",
     vertical: "Fest Secretaries",
-    image: "/team/bhavya-sood.jpg"
+    image: "/team/bhavya-sood.jpg",
+    imageScale: "scale-140",
+  imagePosition: "object-[50%_20%]"
   },
   {
     id: "2",
     name: "Adviti Basu",
     role: "Fest Secretary",
     vertical: "Fest Secretaries",
-    image: "/team/adviti-basu.jpg"
+    image: "/team/adviti-basu.jpg",
+    imageScale: "scale-150",
+  imagePosition: "object-[50%_70%]"
   },
   
   // Deputy Fest Secretaries
@@ -85,7 +89,9 @@ export const teamMembers: TeamMember[] = [
     name: "Diya Sandhir",
     role: "Deputy Fest Secretary",
     vertical: "Deputy Fest Secretaries",
-    image: "/team/diya-sandhir.jpeg"
+    image: "/team/diya-sandhir.jpeg",
+    imageScale: "scale-100",
+    imagePosition: "object-[50%_70%]"
   },
   {
     id: "4",

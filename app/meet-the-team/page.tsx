@@ -41,7 +41,7 @@ export default function TeamPage() {
           className="max-w-3xl mx-auto px-6 text-center"
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-[#242A4A] mb-6 tracking-tight">
-  Meet the team
+  MEET THE TEAM
 </h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
@@ -113,11 +113,15 @@ export default function TeamPage() {
 
                           {member.image ? (
                             <Image
-                              src={member.image}
-                              alt={member.name}
-                              fill
-                              className="object-cover transition-transform duration-500"
-                            />
+  src={member.image}
+  alt={member.name}
+  fill
+  className={`
+    object-cover
+    ${member.imageScale ?? "scale-100"}
+    ${member.imagePosition ?? "object-top"}
+  `}
+ />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center">
                               <User className="w-24 h-24 text-gray-300" />

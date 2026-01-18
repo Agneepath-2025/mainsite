@@ -22,7 +22,7 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/meet-the-team", label: "Meet the Team" },
     { href: "/live-scores", label: "Live Scores" },
-    { href: "/accommodations", label: "Accommodation" },
+    { href: "/accommodation", label: "Accommodation" },
     { href: "/policy-guidelines", label: "Policy & Guidelines" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact-us", label: "Contact Us" },
@@ -41,7 +41,7 @@ export default function Header() {
             className="object-contain"
           />
           <span className="text-lg font-semibold" style={{ color: '#F3EBE0' }}>
-            Agneepath
+            AGNEEPATH
           </span>
         </Link>
 

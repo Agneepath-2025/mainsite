@@ -15,7 +15,7 @@ export default function PolicyGuidelinesPage() {
           className="max-w-3xl mx-auto px-6 text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-[#242A4A] mb-6 tracking-tight">
-            Policies & Guidelines
+            POLICY AND GUIDELINES
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
