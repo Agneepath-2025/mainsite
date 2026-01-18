@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "../components/Header";
 import { Open_Sans } from "next/font/google";
@@ -14,8 +14,6 @@ export const metadata: Metadata = {
   title: "Agneepath 7.0 - Ashoka University Sports Fest",
   description:
     "Official website for Agneepath 7.0, Ashoka University's premier sports festival",
-
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
 
   icons: {
     icon: [
@@ -50,6 +48,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -64,4 +68,3 @@ export default function RootLayout({
     </html>
   );
 }
-  
