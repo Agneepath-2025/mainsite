@@ -18,7 +18,7 @@ const VENUES: Venue[] = [
     name: 'Outdoor Field',
     sports: [
       'Futsal - Sunken Field',
-      'Volleyball - Volleyball Field',
+      'Volleyball - Volleyball Court',
       'Basketball - Basketball Court',
     ],
     dates: '1 Feb 2026',
@@ -45,7 +45,7 @@ const VENUES: Venue[] = [
   {
     id: 3,
     name: 'Football Field',
-    sports: ['Football', 'Cricket'],
+    sports: ['Football'],
     dates: '31 Jan 2026',
     top: '31%',
     left: '65%',
