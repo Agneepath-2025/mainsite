@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 p-4" style={{ backgroundColor: '#2C355D' }}>
-      <div className="max-w-7.5xl mx-auto flex items-center justify-between md:justify-start">
+      <div className="max-w-7.5xl mx-auto flex items-center justify-between">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <Image
@@ -51,7 +51,7 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         {!isMobile && (
-          <nav className="flex items-center gap-10 ml-32">
+          <nav className="flex items-center gap-10 flex-1 justify-center">
             {navLinks.map((link) =>
               link.external ? (
                 <a
@@ -79,7 +79,7 @@ export default function Header() {
         )}
 
         {/* RIGHT SIDE */}
-        <div className="flex items-center gap-25 ml-auto md:ml-35">
+        <div className="flex items-center gap-25">
           {!isMobile && (
             <Link
               href="https://register.agneepath.co.in/"

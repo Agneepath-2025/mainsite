@@ -26,7 +26,7 @@ export default function AccommodationsPage() {
 
       {/* SIDE-BY-SIDE PORTRAIT CARDS */}
       <section className="pb-32 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 justify-items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 justify-items-center">
 
           {/* FAQ CARD */}
           <motion.div
@@ -38,8 +38,8 @@ export default function AccommodationsPage() {
               rounded-xl
               shadow-lg
               w-full
-              max-w-md
-              min-h-[440px]
+              max-w-lg
+              min-h-[500px]
               px-8
               py-14
               text-center
@@ -81,8 +81,8 @@ export default function AccommodationsPage() {
               rounded-xl
               shadow-lg
               w-full
-              max-w-md
-              min-h-[440px]
+              max-w-lg
+              min-h-[500px]
               px-8
               py-14
               text-center
