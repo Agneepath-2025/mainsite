@@ -80,20 +80,28 @@ export default function TeamPage() {
 
                 {/* Team Grid */}
                 <motion.div
-                  variants={container}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.1 }}
-                  className="
-                    grid
-                    justify-center
-                    row-gap-6 sm:row-gap-8 md:row-gap-10
-                    [column-gap:clamp(0.75rem,2vw,1.5rem)] sm:[column-gap:clamp(1.5rem,4vw,4rem)]
-                    [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] sm:[grid-template-columns:repeat(auto-fit,minmax(220px,260px))]
-                  "
-                >
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.1 }}
+  className="
+    grid
+    grid-cols-1
+    justify-center
+    row-gap-16 sm:row-gap-8 md:row-gap-10
+    [column-gap:clamp(1.5rem,3vw,2rem)] sm:[column-gap:clamp(1.5rem,4vw,4rem)]
+    sm:[grid-template-columns:repeat(auto-fit,minmax(220px,260px))]
+  "
+>
+
                   {members.map((member) => (
-                    <motion.div key={member.id} variants={item}>
+                   <motion.div
+  key={member.id}
+  variants={item}
+  className="mb-6 sm:mb-0"
+
+>
+
                      <Card
   className="
     w-full
@@ -116,6 +124,9 @@ export default function TeamPage() {
   src={member.image}
   alt={member.name}
   fill
+  loading="lazy"
+  placeholder="blur"
+  blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23242A4A' width='400' height='400'/%3E%3C/svg%3E"
   className={`
     object-cover
     ${member.imageScale ?? "scale-100"}
@@ -129,17 +140,17 @@ export default function TeamPage() {
                           )}
                         </div>
 
-                        <div className="p-4 bg-[#2C355D]">
+                        <div className="p-2 sm:p-4 bg-[#2C355D] flex flex-col flex-grow">
 
-                         <h3 className="font-bold text-white">
+                         <h3 className="font-bold text-white text-xs sm:text-base line-clamp-2">
                             {member.name}
                           </h3>
-                         <p className="text-sm text-gray-300">
+                         <p className="text-xs text-gray-300 line-clamp-2">
                             {member.role}
                           </p>
 
-                          <div className="flex justify-center mt-16">
-                            <div className="h-px w-16 bg-white/10" />
+                          <div className="flex justify-center mt-auto pt-2 sm:pt-4">
+                            <div className="h-px w-8 sm:w-16 bg-white/10" />
                           </div>
                         </div>
                       </Card>
@@ -149,8 +160,8 @@ export default function TeamPage() {
 
                 {(vertical.name === "Fest Secretaries" ||
                   vertical.name === "Deputy Fest Secretaries") && (
-                  <div className="flex justify-center mt-20">
-                    <div className="h-px w-48 bg-gray-300/40" />
+                  <div className="flex justify-center mt-10 sm:mt-16 md:mt-20">
+                    <div className="h-px w-20 sm:w-32 md:w-48 bg-gray-300/40" />
                   </div>
                 )}
               </motion.div>
@@ -161,7 +172,7 @@ export default function TeamPage() {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 bg-[#FFFDF9]">
-  <div className="max-w-7xl mx-auto px-6 py-6">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6">
     <p className="text-center text-sm text-gray-500">
       Developed by{" "}
       <a
