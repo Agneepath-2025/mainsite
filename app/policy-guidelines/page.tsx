@@ -34,12 +34,12 @@ export default function PolicyGuidelinesPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[560px] px-8 py-14 text-center flex flex-col justify-between"
+            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[520px] px-8 py-14 text-center flex flex-col justify-between"
           >
             <div className="flex flex-col flex-grow text-center">
   
   {/* HEADING (TOP) */}
-  <h2 className="text-3xl font-bold text-white">
+  <h2 className="text-3xl font-bold text-white mt-8">
     General Guidelines
   </h2>
   <div className="h-1 w-12 bg-orange-400 mx-auto mt-4 mb-6" />
@@ -69,12 +69,12 @@ export default function PolicyGuidelinesPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[520px] px-8 py-14 text-center flex flex-col justify-between"
+            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[500px] px-8 py-14 text-center flex flex-col justify-between"
           >
            <div className="flex flex-col flex-grow text-center">
   
   {/* HEADING (TOP) */}
-  <h2 className="text-3xl font-bold text-white">
+  <h2 className="text-3xl font-bold text-white mt-8">
     Rulebook
   </h2>
   <div className="h-1 w-12 bg-orange-400 mx-auto mt-4 mb-6" />
@@ -90,12 +90,12 @@ export default function PolicyGuidelinesPage() {
 
 
             <a
-              href="/docs/rulebook.pdf"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="mx-auto inline-flex items-center justify-center h-11 px-8 rounded-full bg-white text-[#2c355d] font-medium hover:bg-white/90 transition"
             >
-              Open Rulebook
+              View Rulebook
             </a>
           </motion.div>
 
@@ -104,12 +104,12 @@ export default function PolicyGuidelinesPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
-            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[520px] px-8 py-14 text-center flex flex-col justify-between"
+            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[500px] px-8 py-14 text-center flex flex-col justify-between"
           >
            <div className="flex flex-col flex-grow text-center">
   
   {/* HEADING (TOP) */}
-  <h2 className="text-3xl font-bold text-white">
+  <h2 className="text-3xl font-bold text-white mt-8">
     Code of Conduct
   </h2>
   <div className="h-1 w-12 bg-orange-400 mx-auto mt-4 mb-6" />
@@ -131,7 +131,7 @@ export default function PolicyGuidelinesPage() {
               rel="noopener noreferrer"
               className="mx-auto inline-flex items-center justify-center h-11 px-8 rounded-full bg-white text-[#2c355d] font-medium hover:bg-white/90 transition"
             >
-              View Code
+              View COC
             </a>
           </motion.div>
 
