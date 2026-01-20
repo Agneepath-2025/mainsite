@@ -90,7 +90,7 @@ export default function PolicyGuidelinesPage() {
 
 
             <a
-              href=""
+              href="https://docs.google.com/document/d/1kikSQ64iBkxi3C2KPx0FyM4PbIThj0yvH2hDywOETzQ/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="mx-auto inline-flex items-center justify-center h-11 px-8 rounded-full bg-white text-[#2c355d] font-medium hover:bg-white/90 transition"
