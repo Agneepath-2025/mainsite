@@ -15,7 +15,7 @@ export default function Home() {
       
       <main className="relative z-20 min-h-screen overflow-auto">
         {/* Hero Reel Section */}
-        <ReelSection src="/reel.MP4" shrinkRange={600} />
+        <ReelSection src="/reel.webm" shrinkRange={600} />
 
         {/* About Us Section */}
         <section className="w-full py-8 md:py-12">

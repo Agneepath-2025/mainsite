@@ -8,18 +8,18 @@ type SportEvent = {
 };
 
 const events: SportEvent[] = [  
-  { name: "Squash", image: "squash.PNG", color: "dark" },
-  { name: "Football", image: "football.PNG", color: "dark" },
-  { name: "Badminton", image: "badminton.PNG", color: "dark" },
-  { name: "Basketball", image: "basketball.PNG", color: "dark" },
-  { name: "Cricket", image: "cricket.PNG", color: "dark" },
-  { name: "Volleyball", image: "volleyball.PNG", color: "dark" },
-  { name: "Chess", image: "chess.PNG", color: "dark" },
-  { name: "Snooker and Pool", image: "snooker.PNG", color: "dark" },
-  { name: "Tennis", image: "tennis.PNG", color: "dark" },
-  { name: "Shooting", image: "shooting.PNG", color: "dark" },
-  { name: "Futsal", image: "futsal.PNG", color: "dark" },
-  { name: "Table Tennis", image: "tabletennis.PNG", color: "dark" },
+  { name: "Squash", image: "squash.webp", color: "dark" },
+  { name: "Football", image: "football.webp", color: "dark" },
+  { name: "Badminton", image: "badminton.webp", color: "dark" },
+  { name: "Basketball", image: "basketball.webp", color: "dark" },
+  { name: "Cricket", image: "cricket.webp", color: "dark" },
+  { name: "Volleyball", image: "volleyball.webp", color: "dark" },
+  { name: "Chess", image: "chess.webp", color: "dark" },
+  { name: "Snooker and Pool", image: "snooker.webp", color: "dark" },
+  { name: "Tennis", image: "tennis.webp", color: "dark" },
+  { name: "Shooting", image: "shooting.webp", color: "dark" },
+  { name: "Futsal", image: "futsal.webp", color: "dark" },
+  { name: "Table Tennis", image: "tabletennis.webp", color: "dark" },
 ];
 
 const getCardBg = (color: "dark" | "slate" | "orange") => {

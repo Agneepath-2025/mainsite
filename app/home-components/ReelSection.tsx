@@ -70,7 +70,7 @@ export default function ReelSection({ src, shrinkRange = 0 }: ReelSectionProps) 
             loop
             playsInline
             preload="metadata"
-            poster="/poster.png"
+            poster="/poster.webp"
             className="w-full h-full object-cover"
           >
             <source src={src} type="video/mp4" />
