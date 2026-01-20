@@ -46,6 +46,9 @@ const Gallery = ({ sections = [] }: { sections?: GallerySection[] }) => {
                     alt={image.alt}
                     width={1200}
                     height={800}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect fill='%23f5f5f5' width='1200' height='800'/%3E%3C/svg%3E"
                     className="w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
