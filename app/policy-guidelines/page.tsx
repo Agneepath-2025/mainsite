@@ -27,25 +27,32 @@ export default function PolicyGuidelinesPage() {
 
       {/* CONTENT – CARDS */}
       <section className="pb-36 px-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center">
 
           {/* GENERAL GUIDELINES */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-md min-h-[500px] px-8 py-14 text-center flex flex-col justify-between"
+            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[560px] px-8 py-14 text-center flex flex-col justify-between"
           >
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-4">
-                General Guidelines
-              </h2>
-              <div className="h-1 w-12 bg-orange-400 mx-auto mb-8" />
-              <p className="text-gray-200 text-base leading-relaxed">
-                These guidelines outline the basic rules, expectations, and
-                responsibilities all participants must follow.
-              </p>
-            </div>
+            <div className="flex flex-col flex-grow text-center">
+  
+  {/* HEADING (TOP) */}
+  <h2 className="text-3xl font-bold text-white">
+    General Guidelines
+  </h2>
+  <div className="h-1 w-12 bg-orange-400 mx-auto mt-4 mb-6" />
+
+  {/* SUBTEXT (CENTERED) */}
+  <div className="flex flex-grow items-center">
+    <p className="text-gray-200 text-lg leading-relaxed">
+      These guidelines outline the basic rules, expectations, and
+      responsibilities all participants must follow.
+    </p>
+  </div>
+
+</div>
 
             <a
               href="https://docs.google.com/document/d/1vjkK5Rh2fB7HpC8miKEmWBNkz8sJT2Lo/edit?usp=sharing"
@@ -62,17 +69,25 @@ export default function PolicyGuidelinesPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-md min-h-[500px] px-8 py-14 text-center flex flex-col justify-between"
+            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[520px] px-8 py-14 text-center flex flex-col justify-between"
           >
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-4">
-                Rulebook
-              </h2>
-              <div className="h-1 w-12 bg-orange-400 mx-auto mb-8" />
-              <p className="text-gray-200 text-base leading-relaxed">
-                The complete rulebook covering all sports and regulations.
-              </p>
-            </div>
+           <div className="flex flex-col flex-grow text-center">
+  
+  {/* HEADING (TOP) */}
+  <h2 className="text-3xl font-bold text-white">
+    Rulebook
+  </h2>
+  <div className="h-1 w-12 bg-orange-400 mx-auto mt-4 mb-6" />
+
+  {/* SUBTEXT (CENTERED) */}
+  <div className="flex flex-grow items-center justify-center">
+    <p className="text-gray-200 text-lg leading-relaxed">
+      The complete rulebook covering all sports and regulations.
+    </p>
+  </div>
+
+</div>
+
 
             <a
               href="/docs/rulebook.pdf"
@@ -89,18 +104,26 @@ export default function PolicyGuidelinesPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.2 }}
-            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-md min-h-[500px] px-8 py-14 text-center flex flex-col justify-between"
+            className="bg-[#2c355d] rounded-xl shadow-lg w-full max-w-sm min-h-[520px] px-8 py-14 text-center flex flex-col justify-between"
           >
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-4">
-                Code of Conduct
-              </h2>
-              <div className="h-1 w-12 bg-orange-400 mx-auto mb-8" />
-              <p className="text-gray-200 text-base leading-relaxed">
-                Ensures a safe, respectful, and inclusive environment
-                for everyone at Agneepath.
-              </p>
-            </div>
+           <div className="flex flex-col flex-grow text-center">
+  
+  {/* HEADING (TOP) */}
+  <h2 className="text-3xl font-bold text-white">
+    Code of Conduct
+  </h2>
+  <div className="h-1 w-12 bg-orange-400 mx-auto mt-4 mb-6" />
+
+  {/* SUBTEXT (CENTERED) */}
+  <div className="flex flex-grow items-center justify-center">
+    <p className="text-gray-200 text-lg leading-relaxed">
+      Ensures a safe, respectful, and inclusive environment
+      for everyone at Agneepath.
+    </p>
+  </div>
+
+</div>
+
 
             <a
               href="https://docs.google.com/document/d/1qZKYqNN7WHD1kCCZ1UGNht5CHiJN503Fzb8kP_v8S6Q/edit?usp=sharing"

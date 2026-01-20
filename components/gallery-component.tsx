@@ -16,7 +16,7 @@ const Gallery = ({ sections = [] }: { sections?: GallerySection[] }) => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+        <div className="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24 flex flex-col items-center">
           <h2 className="text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">
             GALLERY
           </h2>
@@ -59,7 +59,10 @@ const Gallery = ({ sections = [] }: { sections?: GallerySection[] }) => {
         </div>
 
       </div>
+
+      
     </section>
+    
   )
 }
 

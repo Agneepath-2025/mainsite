@@ -33,12 +33,12 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-[#FFFDF9]">
       {/* HERO SECTION */}
-      <section className="relative min-h-[25vh] pt-16 sm:pt-20 md:pt-24 flex items-center bg-[#FFFDF9]">
+      <section className="relative min-h-[25vh] pt-16 sm:pt-20 md:pt-24 flex items-center justify-center bg-[#FFFDF9]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto px-4 sm:px-6 text-center"
+          className="max-w-3xl mx-auto px-4 sm:px-6 text-center w-full flex flex-col items-center"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#242A4A] mb-3 sm:mb-6 tracking-tight">
   MEET THE TEAM
@@ -79,7 +79,7 @@ export default function TeamPage() {
                 </div>
 
                 {/* Team Grid */}
-                <motion.div
+               <motion.div
   variants={container}
   initial="hidden"
   whileInView="show"
@@ -90,9 +90,12 @@ export default function TeamPage() {
     justify-center
     row-gap-16 sm:row-gap-8 md:row-gap-10
     [column-gap:clamp(1.5rem,3vw,2rem)] sm:[column-gap:clamp(1.5rem,4vw,4rem)]
-    sm:[grid-template-columns:repeat(auto-fit,minmax(220px,260px))]
+    sm:[grid-template-columns:repeat(auto-fit,minmax(240px,260px))]
   "
 >
+
+
+
 
                   {members.map((member) => (
                    <motion.div
@@ -101,11 +104,11 @@ export default function TeamPage() {
   className="mb-6 sm:mb-0"
 
 >
-
-                     <Card
+<Card
   className="
     w-full
-    h-auto aspect-[3/4] sm:aspect-[260px/400px]
+    max-w-[360px]
+    aspect-[3/4]
     bg-[#2C355D]
     border border-white/10
     hover:border-white/40
@@ -117,8 +120,9 @@ export default function TeamPage() {
 >
 
 
-                       <div className="relative aspect-square bg-[#242A4A] overflow-hidden rounded-t-xl">
 
+
+                    <div className="relative aspect-[4/5] bg-[#242A4A] overflow-hidden rounded-t-xl">
                           {member.image ? (
                             <Image
   src={member.image}
