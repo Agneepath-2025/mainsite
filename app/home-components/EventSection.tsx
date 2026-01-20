@@ -15,11 +15,11 @@ const events: SportEvent[] = [
   { name: "Cricket", image: "cricket.PNG", color: "dark" },
   { name: "Volleyball", image: "volleyball.PNG", color: "dark" },
   { name: "Chess", image: "chess.PNG", color: "dark" },
-  { name: "Snooker", image: "snooker.PNG", color: "dark" },
-  { name: "Pool", image: "8-ball.PNG", color: "dark" },
-  { name: "Shooting", image: "shooting.PNG", color: "dark" },
+  { name: "Snooker and Pool", image: "snooker.PNG", color: "dark" },
   { name: "Tennis", image: "tennis.PNG", color: "dark" },
+  { name: "Shooting", image: "shooting.PNG", color: "dark" },
   { name: "Futsal", image: "futsal.PNG", color: "dark" },
+  { name: "Table Tennis", image: "tabletennis.PNG", color: "dark" },
 ];
 
 const getCardBg = (color: "dark" | "slate" | "orange") => {
