@@ -33,26 +33,26 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-[#FFFDF9]">
       {/* HERO SECTION */}
-      <section className="relative min-h-[35vh] pt-24 md:pt-20 flex items-center bg-[#FFFDF9]">
+      <section className="relative min-h-[25vh] pt-16 sm:pt-20 md:pt-24 flex items-center bg-[#FFFDF9]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto px-6 text-center"
+          className="max-w-3xl mx-auto px-4 sm:px-6 text-center"
         >
-          <h1 className="text-5xl md:text-6xl font-extrabold text-[#242A4A] mb-6 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#242A4A] mb-3 sm:mb-6 tracking-tight">
   MEET THE TEAM
 </h1>
 
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
             The passionate individuals behind Ashoka University&apos;s premier sports festival.
           </p>
         </motion.div>
       </section>
 
       {/* CONTENT SECTION */}
-      <section className="py-16 bg-[#FFFDF9]">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-8 sm:py-12 md:py-16 bg-[#FFFDF9]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {verticals.map((vertical) => {
             const members = getTeamByVertical(vertical.name);
             if (members.length === 0) return null;
@@ -64,15 +64,15 @@ export default function TeamPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px", amount: 0.1 }}
                 transition={{ duration: 0.3 }}
-                className="mb-24 last:mb-0"
+                className="mb-12 sm:mb-16 md:mb-24 last:mb-0"
               >
                 {/* Vertical Header */}
-                <div className="mb-14 text-center">
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#9A1B1F] mb-3 tracking-tight">
+                <div className="mb-8 sm:mb-10 md:mb-14 text-center">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#9A1B1F] mb-2 sm:mb-3 tracking-tight">
   {vertical.name}
 </h2>
 
-                 <p className="text-sm text-[#242A4A]/70 max-w-xl mx-auto">
+                 <p className="text-xs sm:text-sm md:text-base text-[#242A4A]/70 max-w-xl mx-auto">
 
                     {vertical.description}
                   </p>
@@ -87,17 +87,17 @@ export default function TeamPage() {
                   className="
                     grid
                     justify-center
-                    row-gap-10
-                    [column-gap:clamp(1.5rem,4vw,4rem)]
-                    [grid-template-columns:repeat(auto-fit,minmax(260px,260px))]
+                    row-gap-6 sm:row-gap-8 md:row-gap-10
+                    [column-gap:clamp(0.75rem,2vw,1.5rem)] sm:[column-gap:clamp(1.5rem,4vw,4rem)]
+                    [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))] sm:[grid-template-columns:repeat(auto-fit,minmax(220px,260px))]
                   "
                 >
                   {members.map((member) => (
                     <motion.div key={member.id} variants={item}>
                      <Card
   className="
-    w-[300px]
-    h-[400px]
+    w-full
+    h-auto aspect-[3/4] sm:aspect-[260px/400px]
     bg-[#2C355D]
     border border-white/10
     hover:border-white/40
