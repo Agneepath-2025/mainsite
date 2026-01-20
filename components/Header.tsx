@@ -22,26 +22,18 @@ export default function Header() {
   ];
 
   return (
-    <header
-      className="sticky top-0 z-50 p-4"
-      style={{ backgroundColor: '#2C355D' }}
-    >
-      <div className="max-w-7.5xl mx-auto flex items-center justify-between md:justify-start">
-        {/* LOGO */}
-        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-          <Image
-            src="/logo-final.png"
-            alt="Agneepath"
-            width={40}
-            height={40}
-          />
-          <span className="text-lg font-semibold text-[#F3EBE0]">
+    <header className="sticky top-0 z-50 p-4" style={{ backgroundColor: '#2C355D' }}>
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+        {/* LOGO - pushed to left */}
+        <Link href="/" className="flex items-center gap-5 flex-shrink-0">
+          <Image src="/logo-final.png" alt="Agneepath" width={40} height={40} />
+          <span className="text-lg font-semibold text-[#F3EBE0] whitespace-nowrap pr-18">
             AGNEEPATH
           </span>
         </Link>
 
-        {/* DESKTOP NAV — unchanged */}
-        <nav className="hidden md:flex items-center gap-10 ml-32">
+        {/* DESKTOP NAV */}
+        <nav className="hidden md:flex flex-wrap items-center gap-6 flex-1 justify-start">
           {navLinks.map((link) =>
             link.external ? (
               <a
@@ -49,7 +41,7 @@ export default function Header() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base transition hover:text-orange-400 text-[#F3EBE0]"
+                className="text-base flex-shrink-0 transition hover:text-orange-400 text-[#F3EBE0] whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -57,7 +49,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base transition hover:text-orange-400 text-[#F3EBE0]"
+                className="text-base flex-shrink-0 transition hover:text-orange-400 text-[#F3EBE0] whitespace-nowrap"
               >
                 {link.label}
               </Link>
@@ -65,17 +57,15 @@ export default function Header() {
           )}
         </nav>
 
-        {/* RIGHT SIDE */}
-        <div className="flex items-center gap-6 ml-auto md:ml-35">
-          {/* DESKTOP REGISTER — unchanged */}
+        {/* RIGHT SIDE REGISTER / HAMBURGER */}
+        <div className="flex items-center gap-4 flex-shrink-0">
           <Link
             href="https://register.agneepath.co.in/"
-            className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white text-base px-5 py-2 rounded-full font-medium transition"
+            className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white text-base px-5 py-2 rounded-full font-medium transition whitespace-nowrap"
           >
             Register
           </Link>
 
-          {/* MOBILE HAMBURGER */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden w-10 h-10 hover:bg-gray-700 rounded-md transition flex items-center justify-center"
@@ -99,12 +89,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* MOBILE MENU ONLY */}
+      {/* MOBILE MENU */}
       {isMenuOpen && (
-        <div
-          className="md:hidden border-t border-gray-700"
-          style={{ backgroundColor: '#2C355D' }}
-        >
+        <div className="md:hidden border-t border-gray-700" style={{ backgroundColor: '#2C355D' }}>
           <nav className="px-4 py-2 space-y-1">
             {navLinks.map((link) =>
               link.external ? (
@@ -129,7 +116,6 @@ export default function Header() {
                 </Link>
               )
             )}
-
             <Link
               href="https://register.agneepath.co.in/"
               onClick={() => setIsMenuOpen(false)}

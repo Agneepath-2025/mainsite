@@ -48,12 +48,22 @@ const EventSection: React.FC = () => {
 
   return (
     <section style={styles.section}>
-      <div style={isMobile ? styles.cardContainerMobile : isTablet ? styles.cardContainerTablet : styles.cardContainerDesktop}>
+      <div style={
+        isMobile
+          ? styles.cardContainerMobile
+          : isTablet
+            ? styles.cardContainerTablet
+            : styles.cardContainerDesktop
+      }>
         {events.map((event) => (
           <div key={event.name} style={styles.cardWrapper}>
             <div
               style={{
-                ...(isMobile ? styles.cardMobile : isTablet ? styles.cardTablet : styles.card),
+                ...(isMobile
+                  ? styles.cardMobile
+                  : isTablet
+                    ? styles.cardTablet
+                    : styles.card),
                 backgroundColor: getCardBg(event.color),
               }}
             >
@@ -83,6 +93,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     width: "100%",
     boxSizing: "border-box",
   },
+
+  // Desktop grid
   cardContainerDesktop: {
     display: "grid",
     gridTemplateColumns: "repeat(4, 240px)",
@@ -90,6 +102,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     justifyContent: "center",
     alignItems: "start",
   },
+
+  // Tablet grid
   cardContainerTablet: {
     display: "grid",
     gridTemplateColumns: "repeat(2, 240px)",
@@ -97,21 +111,27 @@ const styles: { [key: string]: React.CSSProperties } = {
     justifyContent: "center",
     alignItems: "start",
   },
+
+  // Mobile grid: smaller cards, fit image fully
   cardContainerMobile: {
     display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: "1rem",
+    gridTemplateColumns: "repeat(2, minmax(0, 140px))", // smaller cards
+    gap: "0.75rem",
     justifyContent: "center",
     alignItems: "center",
-    maxWidth: "280px",
-    margin: "0 auto",
+    width: "100%",
+    padding: "0 0.5rem",
+    boxSizing: "border-box",
   },
+
   cardWrapper: {
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
   },
+
+  // Desktop card
   card: {
     width: "240px",
     height: "360px",
@@ -124,6 +144,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     transition: "all 0.3s ease",
     backgroundColor: "#242a4a",
   },
+
+  // Tablet card
   cardTablet: {
     width: "240px",
     height: "360px",
@@ -136,18 +158,21 @@ const styles: { [key: string]: React.CSSProperties } = {
     transition: "all 0.3s ease",
     backgroundColor: "#242a4a",
   },
+
+  // Mobile card: smaller to fit images
   cardMobile: {
-    width: "100%",
-    height: "270px",
-    borderRadius: "16px",
+    width: "140px",
+    height: "180px",
+    borderRadius: "12px",
     overflow: "hidden",
-    boxShadow: "0 8px 24px rgba(36, 42, 74, 0.15)",
+    boxShadow: "0 6px 20px rgba(36, 42, 74, 0.12)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     transition: "all 0.3s ease",
     backgroundColor: "#242a4a",
   },
+
   imageContainer: {
     position: "relative" as const,
     width: "100%",
@@ -159,15 +184,17 @@ const styles: { [key: string]: React.CSSProperties } = {
     justifyContent: "center",
     backgroundColor: "#242a4a",
   },
+
   image: {
     width: "100%",
     height: "100%",
-    objectFit: "contain",
+    objectFit: "contain", // always contain
     objectPosition: "center",
     display: "block",
     verticalAlign: "middle",
-    transform: "scale(1.08)",
+    transform: "scale(1.05)", // slight zoom to fill nicely
   },
+
   cardTitle: {
     marginTop: "0.75rem",
     fontSize: "1rem",
@@ -175,12 +202,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: "#242a4a",
     letterSpacing: "0.3px",
   },
+
   cardTitleMobile: {
     marginTop: "0.5rem",
-    fontSize: "0.75rem",
+    fontSize: "0.7rem",
     fontWeight: 600,
     color: "#242a4a",
     letterSpacing: "0.3px",
+    textAlign: "center",
   },
 };
 
