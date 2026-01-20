@@ -106,7 +106,7 @@ export default function AccommodationsPage() {
 
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:agneepath@example.com"
+                href="mailto:agneepath@ashoka.edu.in"
                 className="inline-flex items-center justify-center h-11 rounded-full bg-white text-[#2c355d] font-medium hover:bg-white/90 transition"
               >
                 Email Us
