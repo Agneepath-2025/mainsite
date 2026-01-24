@@ -33,7 +33,7 @@ export default function Header() {
         </Link>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex flex-wrap items-center gap-6 flex-1 justify-start">
+        <nav className="hidden md:flex flex-wrap items-center gap-9 flex-1 justify-start">
           {navLinks.map((link) =>
             link.external ? (
               <a

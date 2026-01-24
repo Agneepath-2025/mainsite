@@ -7,6 +7,7 @@ export interface TeamMember {
 
   // ✅ added to fix TS2339 errors
   imageScale?: string;
+   imageTransform?: string;
   imagePosition?: string;
 }
 
@@ -230,12 +231,15 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: "22",
-    name: "Muhammed Razin",
-    role: "Safety and Security",
-    vertical: "Safety and Security",
-    image: "/team/razin.webp",
-     imageScale: "scale-100",
-    imagePosition: "object-[30%_60%]",
+  name: "Muhammed Razin",
+  role: "Safety and Security",
+  vertical: "Safety and Security",
+  image: "/team/razin-fixed2.webp",
+  imageScale: "scale-[1.35]",
+  imageTransform: "rotate-90",
+ 
+
+    
   },
   {
     id: "23",
