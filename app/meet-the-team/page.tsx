@@ -133,7 +133,9 @@ export default function TeamPage() {
   blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23242A4A' width='400' height='400'/%3E%3C/svg%3E"
   className={`
     object-cover
+     origin-center
     ${member.imageScale ?? "scale-100"}
+    ${member.imageTransform ?? ""}
     ${member.imagePosition ?? "object-top"}
   `}
  />
