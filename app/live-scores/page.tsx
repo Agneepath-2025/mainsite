@@ -68,7 +68,16 @@ export default function LiveScoresPage() {
               rel="noopener noreferrer"
               className="font-semibold text-[#242A4A] transition-colors hover:text-[#ff6e1a]"
             >
-              Nitin S
+              nitin s
+            </a>
+            {" and "}
+            <a
+              href="https://github.com/shristi-io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#242A4A] transition-colors hover:text-[#ff6e1a]"
+            >
+              shristi sharma
             </a>
           </p>
         </div>

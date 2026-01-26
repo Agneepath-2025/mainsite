@@ -187,7 +187,16 @@ export default function TeamPage() {
         rel="noopener noreferrer"
         className="font-semibold text-[#242A4A] transition-colors hover:text-[#FFA543]"
       >
-        Nitin S
+        nitin s
+      </a>
+      {" and "}
+      <a
+        href="https://github.com/shristi-io"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-semibold text-[#242A4A] transition-colors hover:text-[#FFA543]"
+      >
+        shristi sharma
       </a>
     </p>
   </div>
