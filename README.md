@@ -39,3 +39,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ![Deploy](https://github.com/USERNAME/REPO/actions/workflows/deploy.yml/badge.svg)
 ![CI](https://github.com/USERNAME/REPO/actions/workflows/ci.yml/badge.svg)
 ```
+
+## Contributors
+<a href="https://github.com/Agneepath-2025/mainsite/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Agneepath-2025/mainsite" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
