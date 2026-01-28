@@ -66,7 +66,7 @@ export default function Home() {
                     </Link>
                   </li>
                   <li>
-                    <a href="/accommodations" className="text-gray-300 hover:text-white transition">
+                    <a href="https://docs.google.com/spreadsheets/d/1g4IkiOpeFkf-dH0b8FSKZ1uDoicRNHV5rVANyc8ZyYY/edit?usp=sharing" className="text-gray-300 hover:text-white transition">
                       Accommodations
                     </a>
                   </li>
