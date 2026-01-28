@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface ReelSectionProps {
   src: string;
@@ -8,39 +8,20 @@ interface ReelSectionProps {
 }
 
 export default function ReelSection({ src, shrinkRange = 0 }: ReelSectionProps) {
-  const [loaded, setLoaded] = useState(false);
+  const effectRef = useRef<HTMLDivElement>(null);
 
-  // Lazy load video
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setLoaded(true),
-      { threshold: 0.25 }
-    );
-
-    const el = document.getElementById('reel-wrapper');
-    if (el) observer.observe(el);
-
-    return () => {
-      if (el) observer.unobserve(el);
-    };
-  }, []);
-
-  // Scroll shrink/fade effect
+  // SAFE scroll effect (never touches video)
   useEffect(() => {
     if (shrinkRange <= 0) return;
 
-    const reel = document.getElementById('reel-wrapper');
+    const el = effectRef.current;
     let ticking = false;
 
     const handleScroll = () => {
       if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const scrolled = window.scrollY;
-          const progress = Math.min(scrolled / shrinkRange, 1);
-          if (reel) {
-            reel.style.transform = `scale(${1 - progress * 0.2})`;
-            reel.style.opacity = `${1 - progress * 0.3}`;
-          }
+        requestAnimationFrame(() => {
+          const progress = Math.min(window.scrollY / shrinkRange, 1);
+          if (el) el.style.opacity = `${1 - progress * 0.3}`;
           ticking = false;
         });
         ticking = true;
@@ -52,31 +33,26 @@ export default function ReelSection({ src, shrinkRange = 0 }: ReelSectionProps) 
   }, [shrinkRange]);
 
   return (
-    <section className="w-full h-screen overflow-hidden flex items-center justify-center">
-      <div
-        id="reel-wrapper"
-        style={{
-          width: '100%',
-          height: '100%',
-          transformOrigin: 'center',
-          transition: 'transform 0.1s ease-out, opacity 0.1s ease-out',
-        }}
-        className="overflow-hidden"
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* ✅ VIDEO MUST ALWAYS EXIST IN DOM */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/poster.webp"
+        className="absolute inset-0 w-full h-full object-cover"
       >
-        {loaded && (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/poster.webp"
-            className="w-full h-full object-cover"
-          >
-            <source src={src} type="video/mp4" />
-          </video>
-        )}
-      </div>
+        <source src={src.replace('.webm', '.mp4')} type="video/mp4" />
+        <source src={src} type="video/webm" />
+      </video>
+
+      {/* Overlay / effects layer */}
+      <div
+        ref={effectRef}
+        className="relative z-10 w-full h-full pointer-events-none"
+      />
     </section>
   );
 }
