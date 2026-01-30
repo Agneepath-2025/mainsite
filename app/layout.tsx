@@ -17,11 +17,10 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/favicon/favicon.ico" },
-      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon/favicon.ico", sizes: "any" },
       { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: "/favicon/apple-touch-icon.png",
   },
 
   openGraph: {
@@ -61,6 +60,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={openSans.variable}>
+      <head>
+        {/* REQUIRED for Safari */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className="antialiased bg-white text-black font-sans">
         <Header />
         <main>{children}</main>
