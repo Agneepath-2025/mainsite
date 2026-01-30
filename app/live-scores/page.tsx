@@ -29,31 +29,16 @@ export default function LiveScoresPage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="
-            max-w-6xl
-            mx-auto
-            px-10
-            bg-[#2c355d]
-            rounded-2xl
-            shadow-lg
-            text-center
-            flex
-            flex-col
-            justify-center
-            min-h-[320px]
-            py-20
-          "
+          className="max-w-7xl mx-auto px-6"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Coming Soon
-          </h2>
-
-          <div className="h-1 w-24 bg-orange-400 mx-auto mb-8" />
-
-          <p className="text-gray-200 text-lg leading-relaxed max-w-3xl mx-auto">
-            Live score tracking will be available during the event. Stay tuned
-            for real-time updates across all matches and competitions.
-          </p>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden" style={{ height: 'calc(100vh - 200px)', minHeight: '600px' }}>
+            <iframe
+              src="https://playfanup.in/tournaments?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnkY7WEwUuRJAZJJ_KtH1VsjX3ERTHJWjn4Mtz2hzRQDlieNh8j0IVRucfOwU_aem_GkHPxGABwJkWaxf0V5Lsyw"
+              className="w-full h-full border-0"
+              title="Live Tournament Scores"
+              allowFullScreen
+            />
+          </div>
         </motion.div>
       </section>
 
