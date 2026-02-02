@@ -44,35 +44,35 @@
 Top-level files/folders and purpose:
 
 - app/
-├── accommodation/
-│ └── page.tsx — Page that shows Agneepath accomodations
-├── api/
-│ └── sentry-example-api/
-│ └── route.ts  — API route handlers; e.g. `sentry-example-api/route.ts` throws an error intentionally to verify server-side Sentry capture.
-├── contact-us/
-│ └── page.tsx — Agneepath Contact-us page
-├── gallery/
-│ └── page.tsx — Gallery route (uses `components/gallery-component.tsx`).
-├── home-components/
-│ ├── about-us.tsx — About Us section in HomePage
-│ ├── CampusMap.tsx — Campus Map Section in HomePage
-│ ├── ChessboardBackground.tsx — *
-│ ├── EventSection.tsx — List of Sports in HomePage
-│ ├── FootballFieldBackground.tsx — *
-│ ├── ReelSection.tsx — Reel Section of HomePage
-│ ├── SectionActivationContext.tsx — *
-│ └── SwimmingPoolBackground.tsx — *unutilized transitioning backgrounds for HomePage
-├── live-scores/
-│ └── page.tsx — Iframe embedd to Live-Scores (TechMin)
-├── meet-the-team/
-│ └── page.tsx — Meet the team page (images at public/team)
-├── not-found/
-│ └── page.tsx — 404 Error Page
-├── policy-guidelines/
-│ └── page.tsx — Agneepath Policy and Guidelines
-├── sentry-example-page/
-│ └── page.tsx — A dedicated page to test Sentry integration.
-├── `page.tsx` — Home page composed of `home-components/*` subcomponents.
+  ├── accommodation/
+  │ └── page.tsx — Page that shows Agneepath accomodations
+  ├── api/
+  │ └── sentry-example-api/
+  │ └── route.ts  — API route handlers; e.g. `sentry-example-api/route.ts` throws an error intentionally to verify server-side Sentry capture.
+  ├── contact-us/
+  │ └── page.tsx — Agneepath Contact-us page
+  ├── gallery/
+  │ └── page.tsx — Gallery route (uses `components/gallery-component.tsx`).
+  ├── home-components/
+  │ ├── about-us.tsx — About Us section in HomePage
+  │ ├── CampusMap.tsx — Campus Map Section in HomePage
+  │ ├── ChessboardBackground.tsx — *
+  │ ├── EventSection.tsx — List of Sports in HomePage
+  │ ├── FootballFieldBackground.tsx — *
+  │ ├── ReelSection.tsx — Reel Section of HomePage
+  │ ├── SectionActivationContext.tsx — *
+  │ └── SwimmingPoolBackground.tsx — *unutilized transitioning backgrounds for HomePage
+  ├── live-scores/
+  │ └── page.tsx — Iframe embedd to Live-Scores (TechMin)
+  ├── meet-the-team/
+  │ └── page.tsx — Meet the team page (images at public/team)
+  ├── not-found/
+  │ └── page.tsx — 404 Error Page
+  ├── policy-guidelines/
+  │ └── page.tsx — Agneepath Policy and Guidelines
+  ├── sentry-example-page/
+  │ └── page.tsx — A dedicated page to test Sentry integration.
+  ├── `page.tsx` — Home page composed of `home-components/*` subcomponents.
   - `layout.tsx` — Root layout: registers fonts, metadata (open graph, icons), and renders global UI components like `<Header />`. All pages are nested beneath `app/`.
   - `globals.css` — Global styles, CSS variables, and Tailwind imports (`@tailwind base; @tailwind components; @tailwind utilities;`).
 
