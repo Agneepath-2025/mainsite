@@ -220,7 +220,7 @@ pnpm start
 ```
 
 - Deploying to Production:
-  - Add Sentry env vars in Vercel project settings (SENTRY_AUTH_TOKEN, SENTRY_ORG, SENTRY_PROJECT, etc.) so `withSentryConfig` can upload source maps during CI.
+  - Add Sentry env vars on the Server (SENTRY_AUTH_TOKEN, SENTRY_ORG, SENTRY_PROJECT, etc. via .env, system environment variables, or CI configuration) so `withSentryConfig` can upload source maps during CI.
   - Set `CI=true` in the environment during the build to enable Sentry's silent mode (as configured).
 
 - Important: `next.config.ts` sets `images.unoptimized = true`. If you prefer image optimization on the platform, remove or modify this setting and configure allowed domains.
