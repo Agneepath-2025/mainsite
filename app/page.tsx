@@ -104,7 +104,7 @@ export default function Home() {
                   <p>P.O. Rai, Sonepat</p>
                   <p>Haryana - 131029 (India)</p>
                   {/* Phone Number */}
-                  <p className="mt-2 font-semibold">Phone Number: +9717367728</p>
+                  <p className="mt-2 font-semibold">Phone Number: +91 97173 67728</p>
                 </div>
               </div>
 
